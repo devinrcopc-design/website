@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
 
-# Replace with your real production domain before launch.
-Sitemap: https://your-domain.com/sitemap.xml
+Sitemap: https://devinrc.com/sitemap.xml
