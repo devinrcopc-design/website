@@ -1,0 +1,349 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#07111f">
+  <meta name="description" content="DevinRC — modern digital experiences, built to be fast, clear, responsive, and ready to grow.">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta name="author" content="DevinRC">
+  <link rel="canonical" href="https://your-domain.com/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="DevinRC — Digital experiences that feel effortless">
+  <meta property="og:description" content="Fast, responsive digital experiences designed for people and built for growth.">
+  <meta property="og:url" content="https://your-domain.com/">
+  <meta property="og:image" content="https://your-public-r2-domain.com/hero.webp">
+  <meta property="og:image:alt" content="Abstract light flowing through a dark blue space">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="DevinRC — Digital experiences that feel effortless">
+  <meta name="twitter:description" content="Fast, responsive digital experiences designed for people and built for growth.">
+  <meta name="twitter:image" content="https://your-public-r2-domain.com/hero.webp">
+
+  <title>DevinRC — Digital experiences that feel effortless</title>
+
+  <style>
+    :root {
+      --bg: #06101d;
+      --bg-2: #0a1727;
+      --text: #f7fbff;
+      --muted: #aab9ca;
+      --line: rgba(255,255,255,.12);
+      --glass: rgba(7,17,31,.56);
+      --accent: #8ce6ff;
+      --accent-2: #b8a7ff;
+      --max: 1160px;
+      --radius: 24px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--text);
+      background:
+        radial-gradient(circle at 12% 12%, rgba(140,230,255,.13), transparent 32rem),
+        radial-gradient(circle at 88% 25%, rgba(184,167,255,.13), transparent 30rem),
+        linear-gradient(145deg, var(--bg), var(--bg-2));
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    img { max-width: 100%; display: block; }
+
+    .page { position: relative; isolation: isolate; }
+    .page::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      z-index: -2;
+      pointer-events: none;
+      background:
+        linear-gradient(rgba(255,255,255,.025) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,.025) 1px, transparent 1px);
+      background-size: 72px 72px;
+      mask-image: linear-gradient(to bottom, black, transparent 80%);
+    }
+
+    .container { width: min(var(--max), calc(100% - 40px)); margin-inline: auto; }
+
+    header {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 20;
+      padding: 18px 0;
+      background: rgba(6,16,29,.48);
+      border-bottom: 1px solid rgba(255,255,255,.06);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+    }
+
+    nav { display:flex; align-items:center; justify-content:space-between; gap:20px; }
+    .brand { display:flex; align-items:center; gap:11px; font-weight:800; letter-spacing:-.03em; }
+    .brand-mark {
+      width: 34px; height: 34px; border-radius: 11px;
+      display:grid; place-items:center;
+      color:#06101d;
+      background: linear-gradient(135deg, var(--accent), var(--accent-2));
+      box-shadow: 0 8px 30px rgba(140,230,255,.18);
+    }
+    .nav-links { display:flex; align-items:center; gap:28px; color:var(--muted); font-size:.95rem; }
+    .nav-links a:hover { color:var(--text); }
+    .nav-cta {
+      padding: 10px 16px;
+      border:1px solid var(--line);
+      border-radius: 999px;
+      background:rgba(255,255,255,.06);
+      font-weight:700;
+      color:var(--text);
+    }
+
+    .hero { min-height: 100svh; padding: 150px 0 90px; display:grid; place-items:center; }
+    .hero-grid { display:grid; grid-template-columns:1.05fr .95fr; align-items:center; gap:70px; }
+
+    .eyebrow {
+      display:inline-flex; align-items:center; gap:9px;
+      padding:7px 11px;
+      border:1px solid var(--line);
+      border-radius:999px;
+      color:#d8e7f5;
+      background:rgba(255,255,255,.045);
+      font-size:.82rem;
+      font-weight:700;
+    }
+    .eyebrow::before {
+      content:""; width:7px; height:7px; border-radius:50%;
+      background:var(--accent);
+      box-shadow:0 0 18px var(--accent);
+    }
+
+    h1 {
+      margin: 20px 0;
+      max-width: 760px;
+      font-size: clamp(3.25rem, 7vw, 6.5rem);
+      line-height: .95;
+      letter-spacing: -.065em;
+    }
+    .gradient-text {
+      background:linear-gradient(100deg, #fff 0%, #d9f7ff 45%, #bbaeff 100%);
+      -webkit-background-clip:text;
+      background-clip:text;
+      color:transparent;
+    }
+    .hero-copy { max-width: 650px; color:var(--muted); font-size:clamp(1.05rem, 2vw, 1.25rem); }
+    .actions { display:flex; flex-wrap:wrap; gap:12px; margin-top:30px; }
+    .button {
+      display:inline-flex; align-items:center; justify-content:center; gap:9px;
+      min-height:50px; padding:0 19px; border-radius:14px;
+      border:1px solid var(--line); font-weight:800;
+      transition: transform .2s ease, border-color .2s ease, background .2s ease;
+    }
+    .button:hover { transform:translateY(-2px); border-color:rgba(255,255,255,.25); }
+    .button.primary { color:#06101d; background:linear-gradient(135deg, var(--accent), #d8f8ff); border:0; }
+    .button.secondary { background:rgba(255,255,255,.055); }
+
+    .hero-visual {
+      position:relative; min-height:520px; overflow:hidden;
+      border:1px solid var(--line); border-radius:32px;
+      background:rgba(255,255,255,.035);
+      box-shadow: 0 40px 120px rgba(0,0,0,.34);
+    }
+    .hero-visual::before {
+      content:""; position:absolute; inset:0;
+      background:
+        linear-gradient(180deg, rgba(6,16,29,.08), rgba(6,16,29,.74)),
+        url("https://your-public-r2-domain.com/hero.webp") center/cover no-repeat;
+      opacity:.95;
+    }
+    .hero-visual::after {
+      content:""; position:absolute; width:320px; height:320px; right:-80px; top:-80px;
+      border-radius:50%; background:rgba(140,230,255,.2); filter:blur(70px);
+    }
+    .visual-card {
+      position:absolute; left:24px; right:24px; bottom:24px; z-index:2;
+      padding:20px; border:1px solid rgba(255,255,255,.13); border-radius:20px;
+      background:rgba(4,12,23,.62); backdrop-filter:blur(18px);
+    }
+    .visual-card strong { display:block; font-size:1.15rem; margin-bottom:5px; }
+    .visual-card span { color:var(--muted); font-size:.92rem; }
+
+    section { padding:100px 0; }
+    .section-head { max-width:700px; margin-bottom:38px; }
+    .section-head h2 { margin:12px 0; font-size:clamp(2rem, 4vw, 3.5rem); line-height:1; letter-spacing:-.045em; }
+    .section-head p { color:var(--muted); font-size:1.05rem; }
+
+    .cards { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
+    .card {
+      padding:28px; min-height:250px; border:1px solid var(--line); border-radius:var(--radius);
+      background:linear-gradient(145deg, rgba(255,255,255,.065), rgba(255,255,255,.025));
+    }
+    .icon {
+      width:44px; height:44px; display:grid; place-items:center;
+      border-radius:13px; background:rgba(140,230,255,.1);
+      border:1px solid rgba(140,230,255,.16); margin-bottom:28px;
+    }
+    .card h3 { margin:0 0 8px; font-size:1.2rem; }
+    .card p { margin:0; color:var(--muted); }
+
+    .split {
+      display:grid; grid-template-columns:.8fr 1.2fr; gap:60px; align-items:center;
+    }
+    .quote {
+      padding:35px; border-left:2px solid var(--accent);
+      background:linear-gradient(90deg, rgba(140,230,255,.07), transparent);
+      font-size:clamp(1.5rem, 3vw, 2.35rem); line-height:1.15; letter-spacing:-.035em;
+    }
+    .stats { display:grid; grid-template-columns:repeat(2,1fr); gap:14px; }
+    .stat { padding:24px; border:1px solid var(--line); border-radius:18px; background:rgba(255,255,255,.035); }
+    .stat strong { display:block; font-size:2rem; letter-spacing:-.05em; }
+    .stat span { color:var(--muted); font-size:.9rem; }
+
+    .cta {
+      position:relative; overflow:hidden; text-align:center;
+      padding:70px 30px; border:1px solid var(--line); border-radius:32px;
+      background:linear-gradient(135deg, rgba(140,230,255,.09), rgba(184,167,255,.08));
+    }
+    .cta h2 { margin:0 auto 14px; max-width:760px; font-size:clamp(2.4rem,5vw,4.5rem); line-height:1; letter-spacing:-.055em; }
+    .cta p { margin:0 auto; max-width:620px; color:var(--muted); }
+
+    footer { padding:35px 0 50px; color:var(--muted); font-size:.9rem; }
+    .footer-inner { display:flex; justify-content:space-between; gap:20px; padding-top:25px; border-top:1px solid var(--line); }
+
+    @media (max-width: 900px) {
+      .hero-grid, .split { grid-template-columns:1fr; gap:40px; }
+      .hero-visual { min-height:440px; }
+      .cards { grid-template-columns:1fr; }
+      .nav-links a:not(.nav-cta) { display:none; }
+    }
+    @media (max-width: 560px) {
+      .container { width:min(var(--max), calc(100% - 28px)); }
+      header { padding:12px 0; }
+      .hero { padding-top:115px; }
+      h1 { font-size:clamp(3rem, 16vw, 4.4rem); }
+      .hero-visual { min-height:360px; border-radius:24px; }
+      section { padding:70px 0; }
+      .stats { grid-template-columns:1fr; }
+      .footer-inner { flex-direction:column; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior:auto; }
+      *, *::before, *::after { transition:none !important; }
+    }
+  </style>
+
+  <!-- Replace the placeholder R2 URL, canonical URL, and analytics/ad IDs before launch. -->
+  <!-- Google Analytics / Google Ads can be added here once you have the property IDs. -->
+</head>
+
+<body>
+  <div class="page">
+    <header>
+      <div class="container">
+        <nav aria-label="Primary navigation">
+          <a class="brand" href="#top" aria-label="DevinRC home">
+            <span class="brand-mark">D</span>
+            <span>DevinRC</span>
+          </a>
+          <div class="nav-links">
+            <a href="#services">Services</a>
+            <a href="#approach">Approach</a>
+            <a class="nav-cta" href="#contact">Let's talk</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="container hero-grid">
+          <div>
+            <span class="eyebrow">Fast by design · Ready to grow</span>
+            <h1>Digital experiences that <span class="gradient-text">feel effortless.</span></h1>
+            <p class="hero-copy">
+              Clean, responsive websites built around clarity, speed, and conversion — with a polished visual system that works beautifully on every screen.
+            </p>
+            <div class="actions">
+              <a class="button primary" href="#contact">Start a project <span aria-hidden="true">→</span></a>
+              <a class="button secondary" href="#services">Explore services</a>
+            </div>
+          </div>
+
+          <div class="hero-visual" role="img" aria-label="Abstract visual background">
+            <div class="visual-card">
+              <strong>Lightweight. Responsive. Search-ready.</strong>
+              <span>One focused HTML page, no framework overhead, and an R2-ready image layer for fast delivery.</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="services">
+        <div class="container">
+          <div class="section-head">
+            <span class="eyebrow">What we build</span>
+            <h2>Simple structure. Strong presence.</h2>
+            <p>Every detail has a job: communicate quickly, build trust, and make the next action obvious.</p>
+          </div>
+
+          <div class="cards">
+            <article class="card">
+              <div class="icon" aria-hidden="true">✦</div>
+              <h3>Premium web design</h3>
+              <p>Modern layouts, glass surfaces, thoughtful typography, and a visual language that feels intentional without feeling heavy.</p>
+            </article>
+            <article class="card">
+              <div class="icon" aria-hidden="true">↯</div>
+              <h3>Performance first</h3>
+              <p>Minimal dependencies, responsive images, efficient CSS, and an architecture designed to stay quick on mobile networks.</p>
+            </article>
+            <article class="card">
+              <div class="icon" aria-hidden="true">⌕</div>
+              <h3>SEO foundation</h3>
+              <p>Semantic HTML, metadata, canonical URLs, social previews, crawlable content, and a clean base for search campaigns.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="approach">
+        <div class="container split">
+          <div>
+            <span class="eyebrow">Built for real devices</span>
+            <div class="quote">“A beautiful website should still feel instant when someone opens it on a phone.”</div>
+          </div>
+          <div class="stats">
+            <div class="stat"><strong>1 file</strong><span>Core page with no framework dependency</span></div>
+            <div class="stat"><strong>R2-ready</strong><span>Use Cloudflare R2 for optimized hero assets</span></div>
+            <div class="stat"><strong>100%</strong><span>Responsive layout across modern screen sizes</span></div>
+            <div class="stat"><strong>SEO</strong><span>Structured foundation for organic and paid traffic</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="container">
+          <div class="cta">
+            <span class="eyebrow">Have a project in mind?</span>
+            <h2>Let's make something people remember.</h2>
+            <p>Replace this CTA with your email, booking link, phone number, or lead form before launch.</p>
+            <div class="actions" style="justify-content:center">
+              <a class="button primary" href="mailto:hello@your-domain.com">Get in touch <span aria-hidden="true">→</span></a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container footer-inner">
+        <span>© 2026 DevinRC. All rights reserved.</span>
+        <span>Built for speed · Designed for humans</span>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
