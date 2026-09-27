@@ -1,0 +1,10 @@
+node_modules
+.git
+.github
+.dev.*
+.env*
+*.js
+package.json
+bun.lock
+README.md
+wrangler.jsonc

@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" role="img" aria-labelledby="title desc">
+<title id="title">DevinRC Ganesha artwork</title>
+<desc id="desc">Elegant luminous stylized Ganesha artwork for the DevinRC website.</desc>
+<defs>
+  <radialGradient id="halo"><stop stop-color="#8ce6ff" stop-opacity=".42"/><stop offset=".55" stop-color="#b8a7ff" stop-opacity=".14"/><stop offset="1" stop-color="#06101d" stop-opacity="0"/></radialGradient>
+  <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff2b0"/><stop offset=".35" stop-color="#e8bb64"/><stop offset=".7" stop-color="#fff0b0"/><stop offset="1" stop-color="#9b6a2c"/></linearGradient>
+  <linearGradient id="robe" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#8ce6ff"/><stop offset="1" stop-color="#b8a7ff"/></linearGradient>
+  <filter id="glow"><feGaussianBlur stdDeviation="9"/></filter>
+</defs>
+<circle cx="400" cy="370" r="330" fill="url(#halo)"/>
+<circle cx="400" cy="370" r="235" fill="none" stroke="#d9f7ff" stroke-opacity=".22" stroke-width="2"/>
+<circle cx="400" cy="370" r="250" fill="none" stroke="#b8a7ff" stroke-opacity=".12" stroke-width="1"/>
+<g fill="none" stroke="url(#gold)" stroke-width="12" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M400 185c-74 0-118 54-118 123 0 48 20 78 52 99-18 31-28 67-28 108 0 72 40 130 94 130s94-58 94-130c0-41-10-77-28-108 32-21 52-51 52-99 0-69-44-123-118-123Z"/>
+  <path d="M282 290c-45-9-79 12-88 47-8 33 18 66 59 72"/>
+  <path d="M518 290c45-9 79 12 88 47 8 33-18 66-59 72"/>
+  <path d="M335 235c-10-52 13-91 65-91s75 39 65 91"/>
+  <path d="M337 199c20-29 43-43 63-43s43 14 63 43"/>
+  <path d="M370 370c-22 31-20 61 7 84 25 22 58 16 75-11 15-24 10-51-8-68"/>
+  <path d="M400 451c-13 44-10 91 11 132"/>
+  <path d="M342 518c-45 16-76 45-93 88"/>
+  <path d="M458 518c45 16 76 45 93 88"/>
+  <path d="M327 566c-31 34-35 75-14 105"/>
+  <path d="M473 566c31 34 35 75 14 105"/>
+  <path d="M280 654c-15 28-8 55 20 70"/>
+  <path d="M520 654c15 28 8 55-20 70"/>
+</g>
+<g fill="url(#gold)">
+  <circle cx="360" cy="320" r="8"/><circle cx="440" cy="320" r="8"/>
+  <path d="M400 263l12 23-12 20-12-20z"/>
+  <path d="M400 210l8 14-8 13-8-13z"/>
+</g>
+<path d="M343 405c20 13 40 13 57 0 17 13 37 13 57 0-6 45-29 67-57 67s-51-22-57-67Z" fill="url(#robe)" fill-opacity=".75"/>
+<g fill="none" stroke="#fff2b0" stroke-opacity=".75" stroke-width="7" stroke-linecap="round">
+  <path d="M310 410c-44 7-69 30-82 61"/>
+  <path d="M490 410c44 7 69 30 82 61"/>
+  <path d="M320 474c-55 11-82 39-94 78"/>
+  <path d="M480 474c55 11 82 39 94 78"/>
+</g>
+<g fill="#fff2b0">
+  <circle cx="400" cy="530" r="6"/><circle cx="400" cy="555" r="5"/><circle cx="400" cy="578" r="4"/>
+</g>
+<path d="M250 710c64 27 136 40 150 40s86-13 150-40" fill="none" stroke="#8ce6ff" stroke-opacity=".28" stroke-width="4"/>
+</svg>

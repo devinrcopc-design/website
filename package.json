@@ -6,9 +6,14 @@
   "scripts": {
     "dev": "node server.js",
     "start": "node server.js",
-    "build": "node -e \"console.log('Build complete')\""
+    "build": "node build.js",
+    "deploy": "wrangler deploy",
+    "preview": "wrangler dev"
   },
   "dependencies": {
     "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "wrangler": "^4.141.0"
   }
 }
