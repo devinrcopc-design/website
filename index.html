@@ -4,26 +4,31 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#07111f">
-  <meta name="description" content="DevinRC — modern digital experiences, built to be fast, clear, responsive, and ready to grow.">
+  <meta name="description" content="DevinRC is an IT and digital marketing services provider offering website development, Google Ads, Meta Ads, SEO, hosting, automation, and technology solutions.">
   <meta name="robots" content="index,follow,max-image-preview:large">
   <meta name="author" content="DevinRC">
-  <link rel="canonical" href="https://your-domain.com/">
+  <link rel="canonical" href="https://devinrc.com/">
 
   <meta property="og:type" content="website">
   <meta property="og:title" content="DevinRC — Digital experiences that feel effortless">
   <meta property="og:description" content="Fast, responsive digital experiences designed for people and built for growth.">
-  <meta property="og:url" content="https://your-domain.com/">
-  <meta property="og:image" content="https://your-public-r2-domain.com/hero.webp">
+  <meta property="og:url" content="https://devinrc.com/">
+  <meta property="og:image" content="https://YOUR-R2-PUBLIC-DOMAIN/ganesha-hero.webp">
   <meta property="og:image:alt" content="Abstract light flowing through a dark blue space">
 
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="DevinRC — Digital experiences that feel effortless">
   <meta name="twitter:description" content="Fast, responsive digital experiences designed for people and built for growth.">
-  <meta name="twitter:image" content="https://your-public-r2-domain.com/hero.webp">
+  <meta name="twitter:image" content="https://YOUR-R2-PUBLIC-DOMAIN/ganesha-hero.webp">
 
-  <title>DevinRC — Digital experiences that feel effortless</title>
+  <title>DevinRC | IT Services, Google Ads, SEO & Digital Marketing</title>
 
   <style>
+    .theme-toggle{position:fixed;right:18px;bottom:18px;z-index:50;width:46px;height:46px;border:1px solid var(--line);border-radius:50%;background:var(--glass);color:var(--text);font-size:1.1rem;cursor:pointer;backdrop-filter:blur(14px)}
+    body.light{--bg:#f5f8fc;--bg-2:#eaf1f8;--text:#0b1830;--muted:#52647a;--line:rgba(11,24,48,.12);--glass:rgba(255,255,255,.65)}
+    body.light header{background:rgba(245,248,252,.7)}
+    body.light .page::before{opacity:.35}
+
     :root {
       --bg: #06101d;
       --bg-2: #0a1727;
@@ -155,7 +160,7 @@
       content:""; position:absolute; inset:0;
       background:
         linear-gradient(180deg, rgba(6,16,29,.08), rgba(6,16,29,.74)),
-        url("https://your-public-r2-domain.com/hero.webp") center/cover no-repeat;
+        url("https://YOUR-R2-PUBLIC-DOMAIN/ganesha-hero.webp") center/cover no-repeat;
       opacity:.95;
     }
     .hero-visual::after {
@@ -240,6 +245,7 @@
 </head>
 
 <body>
+  <button class="theme-toggle" id="themeToggle" aria-label="Switch color theme">☼</button>
   <div class="page">
     <header>
       <div class="container">
@@ -261,14 +267,12 @@
       <section class="hero">
         <div class="container hero-grid">
           <div>
-            <span class="eyebrow">Fast by design · Ready to grow</span>
-            <h1>Digital experiences that <span class="gradient-text">feel effortless.</span></h1>
-            <p class="hero-copy">
-              Clean, responsive websites built around clarity, speed, and conversion — with a polished visual system that works beautifully on every screen.
-            </p>
+            <span class="eyebrow">IT · Digital Marketing · Google Ads · SEO</span>
+            <h1>Technology that <span class="gradient-text">grows your business.</span></h1>
+            <p class="hero-copy">DevinRC is an IT and digital marketing services provider helping businesses build, launch, advertise, and grow online — from websites and hosting to Google Ads, Meta Ads, SEO, and automation.</p>
             <div class="actions">
-              <a class="button primary" href="#contact">Start a project <span aria-hidden="true">→</span></a>
-              <a class="button secondary" href="#services">Explore services</a>
+              <a class="button primary" href="#contact">Talk to DevinRC <span aria-hidden="true">→</span></a>
+              <a class="button secondary" href="#services">View services</a>
             </div>
           </div>
 
@@ -282,44 +286,34 @@
       </section>
 
       <section id="services">
-        <div class="container">
-          <div class="section-head">
-            <span class="eyebrow">What we build</span>
-            <h2>Simple structure. Strong presence.</h2>
-            <p>Every detail has a job: communicate quickly, build trust, and make the next action obvious.</p>
-          </div>
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">DevinRC services</span>
+      <h2>One technology partner for your digital growth.</h2>
+      <p>From your first website to ongoing advertising and technical support, DevinRC brings the core services together in one place.</p>
+    </div>
+    <div class="cards">
+      <article class="card"><div class="icon">⌘</div><h3>IT & Web Services</h3><p>Website development, maintenance, hosting, domains, cloud solutions, technical support, and business automation.</p></article>
+      <article class="card"><div class="icon">↗</div><h3>Google Ads</h3><p>Search, display, video, remarketing, conversion tracking, campaign setup, optimization, and ongoing management.</p></article>
+      <article class="card"><div class="icon">◎</div><h3>Meta Ads</h3><p>Facebook and Instagram advertising, audience strategy, creative testing, lead campaigns, and conversion-focused optimization.</p></article>
+      <article class="card"><div class="icon">⌕</div><h3>SEO & Growth</h3><p>Technical SEO, on-page optimization, local visibility, content strategy, analytics, and search growth foundations.</p></article>
+      <article class="card"><div class="icon">✦</div><h3>Design & Branding</h3><p>Landing pages, business websites, graphics, brand systems, social assets, and clean conversion-focused experiences.</p></article>
+      <article class="card"><div class="icon">⚙</div><h3>Automation & Analytics</h3><p>Tracking, reporting, lead workflows, integrations, dashboards, and practical automation that saves time.</p></article>
+    </div>
+  </div>
+</section>
 
-          <div class="cards">
-            <article class="card">
-              <div class="icon" aria-hidden="true">✦</div>
-              <h3>Premium web design</h3>
-              <p>Modern layouts, glass surfaces, thoughtful typography, and a visual language that feels intentional without feeling heavy.</p>
-            </article>
-            <article class="card">
-              <div class="icon" aria-hidden="true">↯</div>
-              <h3>Performance first</h3>
-              <p>Minimal dependencies, responsive images, efficient CSS, and an architecture designed to stay quick on mobile networks.</p>
-            </article>
-            <article class="card">
-              <div class="icon" aria-hidden="true">⌕</div>
-              <h3>SEO foundation</h3>
-              <p>Semantic HTML, metadata, canonical URLs, social previews, crawlable content, and a clean base for search campaigns.</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section id="approach">
+<section id="approach">
         <div class="container split">
           <div>
             <span class="eyebrow">Built for real devices</span>
-            <div class="quote">“A beautiful website should still feel instant when someone opens it on a phone.”</div>
+            <div class="quote">Build the technology. Bring the traffic. Measure the results. DevinRC helps connect the pieces.</div>
           </div>
           <div class="stats">
-            <div class="stat"><strong>1 file</strong><span>Core page with no framework dependency</span></div>
-            <div class="stat"><strong>R2-ready</strong><span>Use Cloudflare R2 for optimized hero assets</span></div>
-            <div class="stat"><strong>100%</strong><span>Responsive layout across modern screen sizes</span></div>
-            <div class="stat"><strong>SEO</strong><span>Structured foundation for organic and paid traffic</span></div>
+            <div class="stat"><strong>IT</strong><span>Web, hosting, cloud, and technical services</span></div>
+<div class="stat"><strong>Ads</strong><span>Google and Meta campaign management</span></div>
+<div class="stat"><strong>SEO</strong><span>Search visibility and technical optimization</span></div>
+<div class="stat"><strong>Data</strong><span>Tracking, analytics, and conversion measurement</span></div>
           </div>
         </div>
       </section>
@@ -328,10 +322,10 @@
         <div class="container">
           <div class="cta">
             <span class="eyebrow">Have a project in mind?</span>
-            <h2>Let's make something people remember.</h2>
-            <p>Replace this CTA with your email, booking link, phone number, or lead form before launch.</p>
+            <h2>Need technology, traffic, or both?</h2>
+            <p>Tell us what you need — website, IT support, Google Ads, Meta Ads, SEO, hosting, or a complete digital growth setup.</p>
             <div class="actions" style="justify-content:center">
-              <a class="button primary" href="mailto:hello@your-domain.com">Get in touch <span aria-hidden="true">→</span></a>
+              <a class="button primary" href="mailto:hello@devinrc.com">Get in touch <span aria-hidden="true">→</span></a>
             </div>
           </div>
         </div>
@@ -345,5 +339,17 @@
       </div>
     </footer>
   </div>
+<script>
+    const toggle=document.getElementById('themeToggle');
+    const saved=localStorage.getItem('devinrc-theme');
+    if(saved==='light') document.body.classList.add('light');
+    toggle.textContent=document.body.classList.contains('light')?'☾':'☼';
+    toggle.addEventListener('click',()=>{
+      document.body.classList.toggle('light');
+      const light=document.body.classList.contains('light');
+      localStorage.setItem('devinrc-theme',light?'light':'dark');
+      toggle.textContent=light?'☾':'☼';
+    });
+  </script>
 </body>
 </html>
