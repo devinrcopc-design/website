@@ -1,355 +1,74 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#07111f">
-  <meta name="description" content="DevinRC is an IT and digital marketing services provider offering website development, Google Ads, Meta Ads, SEO, hosting, automation, and technology solutions.">
-  <meta name="robots" content="index,follow,max-image-preview:large">
-  <meta name="author" content="DevinRC">
-  <link rel="canonical" href="https://devinrc.com/">
-
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="DevinRC — Digital experiences that feel effortless">
-  <meta property="og:description" content="Fast, responsive digital experiences designed for people and built for growth.">
-  <meta property="og:url" content="https://devinrc.com/">
-  <meta property="og:image" content="/assets/ganesha-hero.svg">
-  <meta property="og:image:alt" content="Abstract light flowing through a dark blue space">
-
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="DevinRC — Digital experiences that feel effortless">
-  <meta name="twitter:description" content="Fast, responsive digital experiences designed for people and built for growth.">
-  <meta name="twitter:image" content="/assets/ganesha-hero.svg">
-
-  <title>DevinRC | IT Services, Google Ads, SEO & Digital Marketing</title>
-
-  <style>
-    .theme-toggle{position:fixed;right:18px;bottom:18px;z-index:50;width:46px;height:46px;border:1px solid var(--line);border-radius:50%;background:var(--glass);color:var(--text);font-size:1.1rem;cursor:pointer;backdrop-filter:blur(14px)}
-    body.light{--bg:#f5f8fc;--bg-2:#eaf1f8;--text:#0b1830;--muted:#52647a;--line:rgba(11,24,48,.12);--glass:rgba(255,255,255,.65)}
-    body.light header{background:rgba(245,248,252,.7)}
-    body.light .page::before{opacity:.35}
-
-    :root {
-      --bg: #06101d;
-      --bg-2: #0a1727;
-      --text: #f7fbff;
-      --muted: #aab9ca;
-      --line: rgba(255,255,255,.12);
-      --glass: rgba(7,17,31,.56);
-      --accent: #8ce6ff;
-      --accent-2: #b8a7ff;
-      --max: 1160px;
-      --radius: 24px;
-    }
-
-    * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-    body {
-      margin: 0;
-      color: var(--text);
-      background:
-        radial-gradient(circle at 12% 12%, rgba(140,230,255,.13), transparent 32rem),
-        radial-gradient(circle at 88% 25%, rgba(184,167,255,.13), transparent 30rem),
-        linear-gradient(145deg, var(--bg), var(--bg-2));
-      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      line-height: 1.6;
-      overflow-x: hidden;
-    }
-
-    a { color: inherit; text-decoration: none; }
-    img { max-width: 100%; display: block; }
-
-    .page { position: relative; isolation: isolate; }
-    .page::before {
-      content: "";
-      position: fixed;
-      inset: 0;
-      z-index: -2;
-      pointer-events: none;
-      background:
-        linear-gradient(rgba(255,255,255,.025) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(255,255,255,.025) 1px, transparent 1px);
-      background-size: 72px 72px;
-      mask-image: linear-gradient(to bottom, black, transparent 80%);
-    }
-
-    .container { width: min(var(--max), calc(100% - 40px)); margin-inline: auto; }
-
-    header {
-      position: fixed;
-      top: 0; left: 0; right: 0;
-      z-index: 20;
-      padding: 18px 0;
-      background: rgba(6,16,29,.48);
-      border-bottom: 1px solid rgba(255,255,255,.06);
-      backdrop-filter: blur(18px);
-      -webkit-backdrop-filter: blur(18px);
-    }
-
-    nav { display:flex; align-items:center; justify-content:space-between; gap:20px; }
-    .brand { display:flex; align-items:center; gap:11px; font-weight:800; letter-spacing:-.03em; }
-    .brand-mark {
-      width: 34px; height: 34px; border-radius: 11px;
-      display:grid; place-items:center;
-      color:#06101d;
-      background: linear-gradient(135deg, var(--accent), var(--accent-2));
-      box-shadow: 0 8px 30px rgba(140,230,255,.18);
-    }
-    .nav-links { display:flex; align-items:center; gap:28px; color:var(--muted); font-size:.95rem; }
-    .nav-links a:hover { color:var(--text); }
-    .nav-cta {
-      padding: 10px 16px;
-      border:1px solid var(--line);
-      border-radius: 999px;
-      background:rgba(255,255,255,.06);
-      font-weight:700;
-      color:var(--text);
-    }
-
-    .hero { min-height: 100svh; padding: 150px 0 90px; display:grid; place-items:center; }
-    .hero-grid { display:grid; grid-template-columns:1.05fr .95fr; align-items:center; gap:70px; }
-
-    .eyebrow {
-      display:inline-flex; align-items:center; gap:9px;
-      padding:7px 11px;
-      border:1px solid var(--line);
-      border-radius:999px;
-      color:#d8e7f5;
-      background:rgba(255,255,255,.045);
-      font-size:.82rem;
-      font-weight:700;
-    }
-    .eyebrow::before {
-      content:""; width:7px; height:7px; border-radius:50%;
-      background:var(--accent);
-      box-shadow:0 0 18px var(--accent);
-    }
-
-    h1 {
-      margin: 20px 0;
-      max-width: 760px;
-      font-size: clamp(3.25rem, 7vw, 6.5rem);
-      line-height: .95;
-      letter-spacing: -.065em;
-    }
-    .gradient-text {
-      background:linear-gradient(100deg, #fff 0%, #d9f7ff 45%, #bbaeff 100%);
-      -webkit-background-clip:text;
-      background-clip:text;
-      color:transparent;
-    }
-    .hero-copy { max-width: 650px; color:var(--muted); font-size:clamp(1.05rem, 2vw, 1.25rem); }
-    .actions { display:flex; flex-wrap:wrap; gap:12px; margin-top:30px; }
-    .button {
-      display:inline-flex; align-items:center; justify-content:center; gap:9px;
-      min-height:50px; padding:0 19px; border-radius:14px;
-      border:1px solid var(--line); font-weight:800;
-      transition: transform .2s ease, border-color .2s ease, background .2s ease;
-    }
-    .button:hover { transform:translateY(-2px); border-color:rgba(255,255,255,.25); }
-    .button.primary { color:#06101d; background:linear-gradient(135deg, var(--accent), #d8f8ff); border:0; }
-    .button.secondary { background:rgba(255,255,255,.055); }
-
-    .hero-visual {
-      position:relative; min-height:520px; overflow:hidden;
-      border:1px solid var(--line); border-radius:32px;
-      background:rgba(255,255,255,.035);
-      box-shadow: 0 40px 120px rgba(0,0,0,.34);
-    }
-    .hero-visual::before {
-      content:""; position:absolute; inset:0;
-      background:
-        linear-gradient(180deg, rgba(6,16,29,.08), rgba(6,16,29,.74)),
-        url("/assets/ganesha-hero.svg") center/cover no-repeat;
-      opacity:.95;
-    }
-    .hero-visual::after {
-      content:""; position:absolute; width:320px; height:320px; right:-80px; top:-80px;
-      border-radius:50%; background:rgba(140,230,255,.2); filter:blur(70px);
-    }
-    .visual-card {
-      position:absolute; left:24px; right:24px; bottom:24px; z-index:2;
-      padding:20px; border:1px solid rgba(255,255,255,.13); border-radius:20px;
-      background:rgba(4,12,23,.62); backdrop-filter:blur(18px);
-    }
-    .visual-card strong { display:block; font-size:1.15rem; margin-bottom:5px; }
-    .visual-card span { color:var(--muted); font-size:.92rem; }
-
-    section { padding:100px 0; }
-    .section-head { max-width:700px; margin-bottom:38px; }
-    .section-head h2 { margin:12px 0; font-size:clamp(2rem, 4vw, 3.5rem); line-height:1; letter-spacing:-.045em; }
-    .section-head p { color:var(--muted); font-size:1.05rem; }
-
-    .cards { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
-    .card {
-      padding:28px; min-height:250px; border:1px solid var(--line); border-radius:var(--radius);
-      background:linear-gradient(145deg, rgba(255,255,255,.065), rgba(255,255,255,.025));
-    }
-    .icon {
-      width:44px; height:44px; display:grid; place-items:center;
-      border-radius:13px; background:rgba(140,230,255,.1);
-      border:1px solid rgba(140,230,255,.16); margin-bottom:28px;
-    }
-    .card h3 { margin:0 0 8px; font-size:1.2rem; }
-    .card p { margin:0; color:var(--muted); }
-
-    .split {
-      display:grid; grid-template-columns:.8fr 1.2fr; gap:60px; align-items:center;
-    }
-    .quote {
-      padding:35px; border-left:2px solid var(--accent);
-      background:linear-gradient(90deg, rgba(140,230,255,.07), transparent);
-      font-size:clamp(1.5rem, 3vw, 2.35rem); line-height:1.15; letter-spacing:-.035em;
-    }
-    .stats { display:grid; grid-template-columns:repeat(2,1fr); gap:14px; }
-    .stat { padding:24px; border:1px solid var(--line); border-radius:18px; background:rgba(255,255,255,.035); }
-    .stat strong { display:block; font-size:2rem; letter-spacing:-.05em; }
-    .stat span { color:var(--muted); font-size:.9rem; }
-
-    .cta {
-      position:relative; overflow:hidden; text-align:center;
-      padding:70px 30px; border:1px solid var(--line); border-radius:32px;
-      background:linear-gradient(135deg, rgba(140,230,255,.09), rgba(184,167,255,.08));
-    }
-    .cta h2 { margin:0 auto 14px; max-width:760px; font-size:clamp(2.4rem,5vw,4.5rem); line-height:1; letter-spacing:-.055em; }
-    .cta p { margin:0 auto; max-width:620px; color:var(--muted); }
-
-    footer { padding:35px 0 50px; color:var(--muted); font-size:.9rem; }
-    .footer-inner { display:flex; justify-content:space-between; gap:20px; padding-top:25px; border-top:1px solid var(--line); }
-
-    @media (max-width: 900px) {
-      .hero-grid, .split { grid-template-columns:1fr; gap:40px; }
-      .hero-visual { min-height:440px; }
-      .cards { grid-template-columns:1fr; }
-      .nav-links a:not(.nav-cta) { display:none; }
-    }
-    @media (max-width: 560px) {
-      .container { width:min(var(--max), calc(100% - 28px)); }
-      header { padding:12px 0; }
-      .hero { padding-top:115px; }
-      h1 { font-size:clamp(3rem, 16vw, 4.4rem); }
-      .hero-visual { min-height:360px; border-radius:24px; }
-      section { padding:70px 0; }
-      .stats { grid-template-columns:1fr; }
-      .footer-inner { flex-direction:column; }
-    }
-
-    @media (prefers-reduced-motion: reduce) {
-      html { scroll-behavior:auto; }
-      *, *::before, *::after { transition:none !important; }
-    }
-  </style>
-
-  <!-- Site is self-contained. Add Google Ads / Meta Pixel IDs only when ready to measure campaigns. -->
-  
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#081d38">
+<meta name="description" content="DevinRC provides IT services, website development, Google Ads, digital marketing, SEO, hosting, automation and creative design.">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="author" content="DevinRC">
+<link rel="canonical" href="https://devinrc.com/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="DevinRC | IT & Digital Marketing Services">
+<meta property="og:description" content="Technology, Google Ads and digital marketing services for growing businesses.">
+<meta property="og:url" content="https://devinrc.com/">
+<meta property="og:image" content="/assets/ganesha-hero.svg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="DevinRC | IT & Digital Marketing Services">
+<meta name="twitter:description" content="Technology, Google Ads and digital marketing services for growing businesses.">
+<meta name="twitter:image" content="/assets/ganesha-hero.svg">
+<title>DevinRC | IT & Digital Marketing Services Provider</title>
+<style>
+:root{--blue:#0878f9;--blue2:#2f73f2;--navy:#071a33;--ink:#12295a;--muted:#617496;--pale:#eef6ff;--line:#dbe7f5;--white:#fff;--shadow:0 18px 50px rgba(23,71,132,.10);--max:1180px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ink);background:#fff;line-height:1.55;overflow-x:hidden}a{text-decoration:none;color:inherit}.container{width:min(var(--max),calc(100% - 40px));margin:auto}
+header{position:absolute;top:0;left:0;right:0;z-index:20;padding:22px 0;color:#fff}nav{display:flex;align-items:center;justify-content:space-between;gap:30px}.brand{display:flex;align-items:center;gap:10px;font-size:30px;font-weight:800;letter-spacing:-1.5px}.brand-mark{width:38px;height:38px;display:grid;place-items:center}.brand-mark svg{width:38px;height:38px}.brand small{display:block;font-size:10px;font-weight:500;letter-spacing:.15px;margin-top:-3px;opacity:.9}.nav-links{display:flex;align-items:center;gap:34px;font-size:14px}.nav-links a{opacity:.96}.nav-links a:hover{opacity:1;color:#8bd2ff}.nav-cta{background:linear-gradient(135deg,#1689ff,#4d78f2);padding:12px 25px;border-radius:28px;box-shadow:0 10px 25px rgba(20,117,245,.3);font-weight:700}
+.hero{position:relative;min-height:600px;padding:115px 0 30px;color:#fff;background:radial-gradient(circle at 72% 34%,rgba(53,139,255,.28),transparent 28%),radial-gradient(circle at 18% 70%,rgba(21,109,220,.18),transparent 32%),linear-gradient(115deg,#07182d,#06172d 52%,#08213d);overflow:hidden}.hero:before{content:"";position:absolute;inset:auto 0 0;height:230px;background:repeating-radial-gradient(ellipse at 50% 100%,transparent 0 22px,rgba(20,119,245,.13) 24px 25px,transparent 27px 48px);opacity:.75;transform:rotate(-5deg)}.hero-grid{position:relative;z-index:2;display:grid;grid-template-columns:48% 52%;align-items:center;min-height:500px}.hero-copy{padding:15px 0 40px}.hero-kicker{font-size:16px;color:#a9d9ff;letter-spacing:.2px;margin-bottom:10px}.hero-kicker span{margin:0 13px;color:#4e9be7}.hero h1{font-size:clamp(42px,5vw,70px);line-height:1.02;letter-spacing:-3px;margin:5px 0 17px;font-weight:800}.hero h1 .grad{background:linear-gradient(90deg,#83dfff,#6ca0ff);-webkit-background-clip:text;background-clip:text;color:transparent}.hero h2{font-size:clamp(24px,3vw,39px);line-height:1.12;margin:0 0 18px;letter-spacing:-1.2px}.hero p{max-width:510px;color:#d5e3f4;font-size:16px;margin:0}.hero-actions{display:flex;gap:13px;margin-top:25px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;border-radius:28px;padding:12px 25px;font-weight:700;font-size:14px;transition:.2s transform}.btn:hover{transform:translateY(-2px)}.btn-primary{background:linear-gradient(135deg,#087bff,#4d78f2);color:#fff;box-shadow:0 12px 25px rgba(14,108,240,.25)}.hero-art{position:relative;height:500px}.hero-art img{position:absolute;right:-15px;bottom:-8px;width:min(650px,110%);max-height:540px;object-fit:contain;object-position:center bottom;filter:drop-shadow(0 18px 30px rgba(0,0,0,.35))}.hero-art:after{content:"";position:absolute;inset:8% 2% 0 18%;background:radial-gradient(circle,rgba(255,183,54,.16),transparent 46%);z-index:-1}
+section{padding:76px 0}.services{background:#fff}.section-title{text-align:center;max-width:760px;margin:0 auto 34px}.section-label{color:#2679e9;letter-spacing:4px;text-transform:uppercase;font-size:11px;font-weight:800}.section-title h2{font-size:32px;line-height:1.15;margin:9px 0 9px;color:#122b61}.section-title p{margin:0;color:#7b8ca7;font-size:14px}.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:17px}.card{background:#fff;border:1px solid #e1eaf5;border-radius:12px;padding:26px 24px 22px;box-shadow:var(--shadow);min-height:315px;transition:.2s transform,.2s box-shadow}.card:hover{transform:translateY(-4px);box-shadow:0 22px 55px rgba(23,71,132,.15)}.icon{width:58px;height:58px;border-radius:50%;display:grid;place-items:center;font-size:27px;margin-bottom:18px}.i-blue{background:#eaf2ff;color:#2878f3}.i-green{background:#eaf9ef;color:#2ca657}.i-purple{background:#f7eaff;color:#ad54e8}.i-orange{background:#fff2dc;color:#f39a25}.card h3{margin:0 0 5px;font-size:17px;color:#152c60}.card p{margin:0;color:#7c8da7;font-size:12px}.card ul{padding:0;margin:15px 0 15px;list-style:none;color:#657896;font-size:11px;line-height:2}.card li:before{content:"✓";color:#18a875;font-weight:800;margin-right:8px}.learn{color:#0878f9;font-size:11px;font-weight:700}
+.why{background:linear-gradient(110deg,#edf6ff,#f7fbff);border-top:1px solid #edf3fa;border-bottom:1px solid #edf3fa}.why-grid{display:grid;grid-template-columns:1.1fr 1fr 1.1fr;gap:35px;align-items:center}.why h2{font-size:35px;line-height:1.12;margin:8px 0 15px;color:#10295b}.why p{color:#7385a2;font-size:13px;max-width:370px}.features{display:grid;grid-template-columns:1fr 1fr;gap:24px 25px}.feature{display:grid;grid-template-columns:36px 1fr;gap:10px;align-items:start;font-size:12px;color:#173261}.feature .fi{font-size:27px;color:#1483f8}.feature strong{display:block;font-size:12px}.ads-card{background:#fff;border:1px solid #dce7f5;border-radius:12px;padding:25px;box-shadow:var(--shadow)}.ads-logo{display:flex;align-items:center;gap:12px;font-weight:800;color:#18315e}.ads-logo .a{font-size:35px;font-weight:900;color:#4285f4}.ads-card p{font-size:12px;margin:17px 0;color:#71839e}.ads-link{color:#0878f9;font-size:11px;font-weight:700}
+.partners{padding:48px 0 35px;text-align:center}.partner-title{font-size:25px;color:#163268;font-weight:800;margin:5px 0 25px}.logos{display:grid;grid-template-columns:repeat(6,1fr);gap:18px;align-items:center}.logo{font-size:20px;font-weight:700;color:#8190a8;opacity:.95}.logo.google{color:#4285f4}.logo.ms{color:#6d7b8e}.logo.meta{color:#536ccf}.logo.aws{color:#536173}.logo.cf{color:#8c7c6b}.logo.wp{color:#5f7188}
+.cta{position:relative;color:#fff;text-align:center;background:linear-gradient(120deg,#071a34,#102e56 58%,#071a34);padding:50px 0 35px;overflow:hidden}.cta:before,.cta:after{content:"";position:absolute;border:1px solid rgba(54,143,255,.18);border-radius:50%;width:760px;height:250px;left:-130px;bottom:-170px;transform:rotate(-9deg)}.cta:after{left:auto;right:-160px;bottom:-145px;transform:rotate(10deg)}.cta>*{position:relative;z-index:2}.cta h2{font-size:24px;margin:0 0 3px}.cta p{font-size:11px;color:#c6d5e8;margin:0 0 16px}.contact-row{display:flex;justify-content:center;gap:28px;flex-wrap:wrap;font-size:11px;color:#d4e0ee;margin-top:22px}.contact-row span{display:inline-flex;gap:7px;align-items:center}.footer{background:#071a34;color:#fff;border-top:1px solid rgba(255,255,255,.08);padding:25px 0 17px}.footer-top{display:flex;align-items:center;justify-content:space-between;gap:20px}.footer-brand{font-size:25px;font-weight:800}.footer-sub{font-size:10px;color:#b7c8dd;margin-top:2px}.social{display:flex;gap:10px}.social span{width:28px;height:28px;border-radius:50%;display:grid;place-items:center;background:#173a66;font-size:11px}.copyright{text-align:center;border-top:1px solid rgba(255,255,255,.08);padding-top:13px;margin-top:20px;color:#91a7c1;font-size:9px}
+@media(max-width:900px){.nav-links{gap:15px}.nav-links a:not(.nav-cta){display:none}.hero-grid{grid-template-columns:1fr}.hero-copy{padding-bottom:0}.hero-art{height:390px}.hero-art img{width:600px;right:50%;transform:translateX(50%)}.cards{grid-template-columns:repeat(2,1fr)}.why-grid{grid-template-columns:1fr}.logos{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:560px){.container{width:min(var(--max),calc(100% - 28px))}header{padding:15px 0}.brand{font-size:24px}.hero{padding-top:100px;min-height:760px}.hero h1{font-size:42px;letter-spacing:-2px}.hero h2{font-size:25px}.hero-art{height:350px}.hero-art img{width:500px}.hero-actions{flex-wrap:wrap}.cards{grid-template-columns:1fr}.features{grid-template-columns:1fr}.logos{grid-template-columns:repeat(2,1fr)}section{padding:60px 0}.footer-top{align-items:flex-start;flex-direction:column}}
+</style>
 </head>
-
 <body>
-  <button class="theme-toggle" id="themeToggle" aria-label="Switch color theme">☼</button>
-  <div class="page">
-    <header>
-      <div class="container">
-        <nav aria-label="Primary navigation">
-          <a class="brand" href="#top" aria-label="DevinRC home">
-            <span class="brand-mark">D</span>
-            <span>DevinRC</span>
-          </a>
-          <div class="nav-links">
-            <a href="#services">Services</a>
-            <a href="#approach">Approach</a>
-            <a class="nav-cta" href="#contact">Let's talk</a>
-          </div>
-        </nav>
-      </div>
-    </header>
+<header>
+<div class="container"><nav>
+<a class="brand" href="#top"><span class="brand-mark"><svg viewBox="0 0 40 40" fill="none"><path d="M20 33c0-8 2-13 7-18 3-3 5-7 4-11-6 2-10 6-12 12-2-5-6-9-12-11-1 6 1 10 5 13 5 4 7 9 7 15" fill="#4dd8ff"/><path d="M20 33c-1-8-4-13-10-16-3-2-5-5-5-9 7 1 12 4 15 10 2-6 6-10 13-12 1 6-1 10-5 13-5 4-7 9-8 14" fill="#4f79f6"/></svg></span><span>devinrc<small>IT · Digital Marketing · Google Ads</small></span></a>
+<div class="nav-links"><a href="#top">Home</a><a href="#services">Services</a><a href="#why">About</a><a href="#contact">Contact</a><a class="nav-cta" href="#contact">Get Started</a></div>
+</nav></div>
+</header>
+<main id="top">
+<section class="hero"><div class="container hero-grid">
+<div class="hero-copy">
+<div class="hero-kicker">Your Growth <span>|</span> Our Technology <span>|</span> Together</div>
+<h1><span class="grad">devinrc</span></h1>
+<h2>IT & Digital Marketing<br>Services Provider</h2>
+<p>We help businesses grow with modern IT solutions, Google Ads, and digital marketing strategies that deliver real results.</p>
+<div class="hero-actions"><a class="btn btn-primary" href="mailto:hello@devinrc.com">Get a Free Consultation <span>→</span></a></div>
+</div>
+<div class="hero-art"><img src="/assets/ganesha-hero.svg" alt="Ganesha artwork for DevinRC"></div>
+</div></section>
 
-    <main id="top">
-      <section class="hero">
-        <div class="container hero-grid">
-          <div>
-            <span class="eyebrow">IT · Digital Marketing · Google Ads · SEO</span>
-            <h1>Technology that <span class="gradient-text">grows your business.</span></h1>
-            <p class="hero-copy">DevinRC is an IT and digital marketing services provider helping businesses build, launch, advertise, and grow online — from websites and hosting to Google Ads, Meta Ads, SEO, and automation.</p>
-            <div class="actions">
-              <a class="button primary" href="#contact">Talk to DevinRC <span aria-hidden="true">→</span></a>
-              <a class="button secondary" href="#services">View services</a>
-            </div>
-          </div>
+<section id="services" class="services"><div class="container">
+<div class="section-title"><div class="section-label">Our Services</div><h2>Complete Digital Solutions for Your Business</h2><p>From IT support to performance marketing, we provide end-to-end services to help you achieve your goals and grow online.</p></div>
+<div class="cards">
+<article class="card"><div class="icon i-blue">⌘</div><h3>IT Services</h3><p>Reliable IT solutions for a smarter tomorrow.</p><ul><li>Web Development</li><li>App Development</li><li>Cloud Solutions</li><li>IT Support & Maintenance</li></ul><a class="learn" href="#contact">Learn More →</a></article>
+<article class="card"><div class="icon i-green">◢</div><h3>Google Ads</h3><p>Get seen. Get clicks. Grow faster.</p><ul><li>Search Ads</li><li>Display Ads</li><li>Video Ads</li><li>Campaign Management</li></ul><a class="learn" href="#contact">Learn More →</a></article>
+<article class="card"><div class="icon i-purple">⚑</div><h3>Digital Marketing</h3><p>Build your brand. Reach your audience.</p><ul><li>SEO (Search Engine Optimization)</li><li>Social Media Marketing</li><li>Content Marketing</li><li>Email Marketing</li></ul><a class="learn" href="#contact">Learn More →</a></article>
+<article class="card"><div class="icon i-orange">◉</div><h3>Creative & Design</h3><p>Stunning designs that make an impact.</p><ul><li>Logo Design</li><li>Website Design</li><li>Social Media Graphics</li><li>Branding & Identity</li></ul><a class="learn" href="#contact">Learn More →</a></article>
+</div></div></section>
 
-          <div class="hero-visual" role="img" aria-label="DevinRC Ganesha artwork">
-            <div class="visual-card">
-              <strong>Lightweight. Responsive. Search-ready.</strong>
-              <span>One focused HTML page, no framework overhead, and an R2-ready image layer for fast delivery.</span>
-            </div>
-          </div>
-        </div>
-      </section>
+<section id="why" class="why"><div class="container why-grid">
+<div><div class="section-label">Why Choose DevinRC</div><h2>Your Success<br>Is Our Priority</h2><p>We combine technology, creativity and data-driven strategies to deliver measurable results and long-term growth.</p></div>
+<div class="features"><div class="feature"><div class="fi">ϟ</div><div><strong>Fast & Reliable</strong>Service</div></div><div class="feature"><div class="fi">♢</div><div><strong>Experienced</strong>Team</div></div><div class="feature"><div class="fi">◎</div><div><strong>Results-Driven</strong>Approach</div></div><div class="feature"><div class="fi">◉</div><div><strong>24/7</strong>Support</div></div></div>
+<div class="ads-card"><div class="ads-logo"><span class="a">A</span><span>Google Ads</span></div><p>We create, manage and optimize Google Ads campaigns to bring you more customers.</p><a class="ads-link" href="#contact">Start Your Campaign →</a></div>
+</div></section>
 
-      <section id="services">
-  <div class="container">
-    <div class="section-head">
-      <span class="eyebrow">DevinRC services</span>
-      <h2>One technology partner for your digital growth.</h2>
-      <p>From your first website to ongoing advertising and technical support, DevinRC brings the core services together in one place.</p>
-    </div>
-    <div class="cards">
-      <article class="card"><div class="icon">⌘</div><h3>IT & Web Services</h3><p>Website development, maintenance, hosting, domains, cloud solutions, technical support, and business automation.</p></article>
-      <article class="card"><div class="icon">↗</div><h3>Google Ads</h3><p>Search, display, video, remarketing, conversion tracking, campaign setup, optimization, and ongoing management.</p></article>
-      <article class="card"><div class="icon">◎</div><h3>Meta Ads</h3><p>Facebook and Instagram advertising, audience strategy, creative testing, lead campaigns, and conversion-focused optimization.</p></article>
-      <article class="card"><div class="icon">⌕</div><h3>SEO & Growth</h3><p>Technical SEO, on-page optimization, local visibility, content strategy, analytics, and search growth foundations.</p></article>
-      <article class="card"><div class="icon">✦</div><h3>Design & Branding</h3><p>Landing pages, business websites, graphics, brand systems, social assets, and clean conversion-focused experiences.</p></article>
-      <article class="card"><div class="icon">⚙</div><h3>Automation & Analytics</h3><p>Tracking, reporting, lead workflows, integrations, dashboards, and practical automation that saves time.</p></article>
-    </div>
-  </div>
-</section>
+<section class="partners"><div class="container"><div class="section-label">Our Clients & Partners</div><div class="partner-title">Trusted by Businesses Worldwide</div><div class="logos"><div class="logo google">Google</div><div class="logo ms">▦ Microsoft</div><div class="logo meta">∞ Meta</div><div class="logo aws">aws</div><div class="logo cf">☁ Cloudflare</div><div class="logo wp">◉ WordPress</div></div></div></section>
 
-<section id="approach">
-        <div class="container split">
-          <div>
-            <span class="eyebrow">Built for real devices</span>
-            <div class="quote">Build the technology. Bring the traffic. Measure the results. DevinRC helps connect the pieces.</div>
-          </div>
-          <div class="stats">
-            <div class="stat"><strong>IT</strong><span>Web, hosting, cloud, and technical services</span></div>
-<div class="stat"><strong>Ads</strong><span>Google and Meta campaign management</span></div>
-<div class="stat"><strong>SEO</strong><span>Search visibility and technical optimization</span></div>
-<div class="stat"><strong>Data</strong><span>Tracking, analytics, and conversion measurement</span></div>
-          </div>
-        </div>
-      </section>
-
-      <section id="contact">
-        <div class="container">
-          <div class="cta">
-            <span class="eyebrow">Have a project in mind?</span>
-            <h2>Need technology, traffic, or both?</h2>
-            <p>Tell us what you need — website, IT support, Google Ads, Meta Ads, SEO, hosting, or a complete digital growth setup.</p>
-            <div class="actions" style="justify-content:center">
-              <a class="button primary" href="mailto:hello@devinrc.com">Get in touch <span aria-hidden="true">→</span></a>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer>
-      <div class="container footer-inner">
-        <span>© 2026 DevinRC. All rights reserved.</span>
-        <span>Built for speed · Designed for humans</span>
-      </div>
-    </footer>
-  </div>
-<script>
-    const toggle=document.getElementById('themeToggle');
-    const saved=localStorage.getItem('devinrc-theme');
-    if(saved==='light') document.body.classList.add('light');
-    toggle.textContent=document.body.classList.contains('light')?'☾':'☼';
-    toggle.addEventListener('click',()=>{
-      document.body.classList.toggle('light');
-      const light=document.body.classList.contains('light');
-      localStorage.setItem('devinrc-theme',light?'light':'dark');
-      toggle.textContent=light?'☾':'☼';
-    });
-  </script>
+<section id="contact" class="cta"><div class="container"><h2>Ready to Grow Your Business?</h2><p>Let's build something great together. Get in touch with us today!</p><a class="btn btn-primary" href="mailto:hello@devinrc.com">Contact Us →</a><div class="contact-row"><span>✉ hello@devinrc.com</span><span>⌖ Global Services</span></div></div></section>
+</main>
+<footer class="footer"><div class="container"><div class="footer-top"><div><div class="footer-brand">◈ devinrc</div><div class="footer-sub">IT · Digital Marketing · Google Ads</div></div><div class="social"><span>f</span><span>in</span><span>𝕏</span><span>▶</span></div></div><div class="copyright">© 2026 DevinRC. All rights reserved. &nbsp;|&nbsp; Your Partner in Digital Growth</div></div></footer>
 </body>
 </html>
