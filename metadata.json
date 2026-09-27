@@ -1,0 +1,8 @@
+{
+  "name": "DevinRC - IT & Digital Marketing Services",
+  "description": "DevinRC provides IT services, website development, Google Ads, digital marketing, SEO, hosting, automation and creative design.",
+  "permissions": [],
+  "capabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

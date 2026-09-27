@@ -2,73 +2,2228 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#081d38">
-<meta name="description" content="DevinRC provides IT services, website development, Google Ads, digital marketing, SEO, hosting, automation and creative design.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#051326">
+<meta name="description" content="DevinRC provides IT services, website development, Google Ads, digital marketing, SEO, hosting, automation and creative design for growing businesses.">
 <meta name="robots" content="index,follow,max-image-preview:large">
 <meta name="author" content="DevinRC">
 <link rel="canonical" href="https://devinrc.com/">
+
+<!-- Open Graph / Facebook -->
 <meta property="og:type" content="website">
-<meta property="og:title" content="DevinRC | IT & Digital Marketing Services">
-<meta property="og:description" content="Technology, Google Ads and digital marketing services for growing businesses.">
+<meta property="og:title" content="DevinRC | IT & Digital Marketing Services Provider">
+<meta property="og:description" content="Technology, Google Ads and digital marketing services that deliver measurable growth.">
 <meta property="og:url" content="https://devinrc.com/">
-<meta property="og:image" content="/assets/ganesha-hero.webp">
+<meta property="og:image" content="/assets/ganesha-hero.png">
+
+<!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="DevinRC | IT & Digital Marketing Services">
-<meta name="twitter:description" content="Technology, Google Ads and digital marketing services for growing businesses.">
-<meta name="twitter:image" content="/assets/ganesha-hero.webp">
+<meta name="twitter:title" content="DevinRC | IT & Digital Marketing Services Provider">
+<meta name="twitter:description" content="Technology, Google Ads and digital marketing services that deliver measurable growth.">
+<meta name="twitter:image" content="/assets/ganesha-hero.png">
+
+<!-- Preload critical hero image -->
+<link rel="preload" as="image" href="/assets/ganesha-hero.webp" type="image/webp">
+
 <title>DevinRC | IT & Digital Marketing Services Provider</title>
+
+<!-- Schema.org JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "DevinRC",
+  "image": "https://devinrc.com/assets/ganesha-hero.webp",
+  "url": "https://devinrc.com/",
+  "email": "hello@devinrc.com",
+  "description": "DevinRC provides premium IT services, website and app development, Google Ads campaign management, digital marketing, SEO, and creative brand design.",
+  "areaServed": "Global",
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "DevinRC Digital & IT Services",
+    "itemListElement": [
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "IT Services & Web Development" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Google Ads Campaign Management" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Digital Marketing & SEO" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Creative & Brand Design" } }
+    ]
+  }
+}
+</script>
+
 <style>
-:root{--blue:#0878f9;--blue2:#2f73f2;--navy:#071a33;--ink:#12295a;--muted:#617496;--pale:#eef6ff;--line:#dbe7f5;--white:#fff;--shadow:0 18px 50px rgba(23,71,132,.10);--max:1180px}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ink);background:#fff;line-height:1.55;overflow-x:hidden}a{text-decoration:none;color:inherit}.container{width:min(var(--max),calc(100% - 40px));margin:auto}
-header{position:absolute;top:0;left:0;right:0;z-index:20;padding:22px 0;color:#fff}nav{display:flex;align-items:center;justify-content:space-between;gap:30px}.brand{display:flex;align-items:center;gap:10px;font-size:30px;font-weight:800;letter-spacing:-1.5px}.brand-mark{width:38px;height:38px;display:grid;place-items:center}.brand-mark svg{width:38px;height:38px}.brand small{display:block;font-size:10px;font-weight:500;letter-spacing:.15px;margin-top:-3px;opacity:.9}.nav-links{display:flex;align-items:center;gap:34px;font-size:14px}.nav-links a{opacity:.96}.nav-links a:hover{opacity:1;color:#8bd2ff}.nav-cta{background:linear-gradient(135deg,#1689ff,#4d78f2);padding:12px 25px;border-radius:28px;box-shadow:0 10px 25px rgba(20,117,245,.3);font-weight:700}
-.hero{position:relative;min-height:650px;padding:115px 0 35px;color:#fff;background-image:linear-gradient(90deg,rgba(4,18,38,.97) 0%,rgba(4,18,38,.90) 34%,rgba(4,18,38,.40) 58%,rgba(4,18,38,.10) 100%),url('/assets/ganesha-hero.webp');background-size:cover;background-position:center center;overflow:hidden}.hero:before{content:"";position:absolute;inset:auto 0 0;height:230px;background:repeating-radial-gradient(ellipse at 50% 100%,transparent 0 22px,rgba(20,119,245,.13) 24px 25px,transparent 27px 48px);opacity:.75;transform:rotate(-5deg)}.hero-grid{position:relative;z-index:2;display:grid;grid-template-columns:47% 53%;align-items:center;min-height:540px}.hero-copy{padding:15px 0 55px;position:relative;z-index:3}.hero-kicker{font-size:16px;color:#a9d9ff;letter-spacing:.2px;margin-bottom:10px}.hero-kicker span{margin:0 13px;color:#4e9be7}.hero h1{font-size:clamp(46px,5.3vw,74px);line-height:1.02;letter-spacing:-3px;margin:5px 0 17px;font-weight:800}.hero h1 .grad{background:linear-gradient(90deg,#83dfff,#6ca0ff);-webkit-background-clip:text;background-clip:text;color:transparent}.hero h2{font-size:clamp(25px,3vw,40px);line-height:1.12;margin:0 0 18px;letter-spacing:-1.2px}.hero p{max-width:510px;color:#d5e3f4;font-size:16px;margin:0}.hero-actions{display:flex;gap:13px;margin-top:25px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;border-radius:28px;padding:12px 25px;font-weight:700;font-size:14px;transition:.2s transform}.btn:hover{transform:translateY(-2px)}.btn-primary{background:linear-gradient(135deg,#087bff,#4d78f2);color:#fff;box-shadow:0 12px 25px rgba(14,108,240,.25)}.hero-art{position:relative;height:540px}.hero-art img{display:none}.hero-art:after{content:"";position:absolute;inset:8% 2% 0 18%;background:radial-gradient(circle,rgba(255,183,54,.10),transparent 46%);z-index:0}.hero-ad-card{position:absolute;right:-8px;top:90px;width:155px;padding:18px 14px;border:1px solid rgba(76,169,255,.65);border-radius:16px;background:rgba(5,25,50,.48);backdrop-filter:blur(10px);box-shadow:0 18px 40px rgba(0,0,0,.25);z-index:4}.hero-ad-logo{display:flex;align-items:center;gap:10px;color:#fff;font-weight:800;font-size:18px}.hero-ad-logo .admark{width:36px;height:36px;position:relative}.hero-ad-logo .admark:before{content:"";position:absolute;left:8px;top:2px;width:13px;height:29px;background:#4285f4;border-radius:4px 4px 10px 10px;transform:skew(-15deg)}.hero-ad-logo .admark:after{content:"";position:absolute;left:14px;top:13px;width:18px;height:13px;background:#34a853;border-radius:0 8px 8px 8px;transform:rotate(-22deg)}.hero-ad-arrow{font-size:48px;line-height:.8;text-align:right;color:#43a7ff;margin-top:12px}.hero-ad-copy{font-size:12px;line-height:1.5;color:#e4f1ff;margin-top:7px}
-section{padding:76px 0}.services{background:#fff}.section-title{text-align:center;max-width:760px;margin:0 auto 34px}.section-label{color:#2679e9;letter-spacing:4px;text-transform:uppercase;font-size:11px;font-weight:800}.section-title h2{font-size:32px;line-height:1.15;margin:9px 0 9px;color:#122b61}.section-title p{margin:0;color:#7b8ca7;font-size:14px}.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:17px}.card{background:#fff;border:1px solid #e1eaf5;border-radius:12px;padding:26px 24px 22px;box-shadow:var(--shadow);min-height:315px;transition:.2s transform,.2s box-shadow}.card:hover{transform:translateY(-4px);box-shadow:0 22px 55px rgba(23,71,132,.15)}.icon{width:58px;height:58px;border-radius:50%;display:grid;place-items:center;font-size:27px;margin-bottom:18px}.i-blue{background:#eaf2ff;color:#2878f3}.i-green{background:#eaf9ef;color:#2ca657}.i-purple{background:#f7eaff;color:#ad54e8}.i-orange{background:#fff2dc;color:#f39a25}.card h3{margin:0 0 5px;font-size:17px;color:#152c60}.card p{margin:0;color:#7c8da7;font-size:12px}.card ul{padding:0;margin:15px 0 15px;list-style:none;color:#657896;font-size:11px;line-height:2}.card li:before{content:"✓";color:#18a875;font-weight:800;margin-right:8px}.learn{color:#0878f9;font-size:11px;font-weight:700}
-.why{background:linear-gradient(110deg,#edf6ff,#f7fbff);border-top:1px solid #edf3fa;border-bottom:1px solid #edf3fa}.why-grid{display:grid;grid-template-columns:1.1fr 1fr 1.1fr;gap:35px;align-items:center}.why h2{font-size:35px;line-height:1.12;margin:8px 0 15px;color:#10295b}.why p{color:#7385a2;font-size:13px;max-width:370px}.features{display:grid;grid-template-columns:1fr 1fr;gap:24px 25px}.feature{display:grid;grid-template-columns:36px 1fr;gap:10px;align-items:start;font-size:12px;color:#173261}.feature .fi{font-size:27px;color:#1483f8}.feature strong{display:block;font-size:12px}.ads-card{background:#fff;border:1px solid #dce7f5;border-radius:12px;padding:25px;box-shadow:var(--shadow)}.ads-logo{display:flex;align-items:center;gap:12px;font-weight:800;color:#18315e}.ads-logo .a{width:40px;height:40px;display:grid;place-items:center;font-size:0;position:relative}.ads-logo .a:before{content:"";width:18px;height:30px;border-radius:4px 4px 10px 10px;background:linear-gradient(145deg,#4285f4 0 42%,#34a853 43% 67%,#fbbc05 68% 82%,#ea4335 83%);transform:skew(-12deg)}.ads-card p{font-size:12px;margin:17px 0;color:#71839e}.ads-link{color:#0878f9;font-size:11px;font-weight:700}
-.partners{padding:48px 0 35px;text-align:center}.partner-title{font-size:25px;color:#163268;font-weight:800;margin:5px 0 25px}.logos{display:grid;grid-template-columns:repeat(6,1fr);gap:18px;align-items:center}.logo{font-size:20px;font-weight:700;color:#8190a8;opacity:.95}.logo.google{color:#4285f4}.logo.ms{color:#6d7b8e}.logo.meta{color:#536ccf}.logo.aws{color:#536173}.logo.cf{color:#8c7c6b}.logo.wp{color:#5f7188}
-.cta{position:relative;color:#fff;text-align:center;background:linear-gradient(120deg,#071a34,#102e56 58%,#071a34);padding:50px 0 35px;overflow:hidden}.cta:before,.cta:after{content:"";position:absolute;border:1px solid rgba(54,143,255,.18);border-radius:50%;width:760px;height:250px;left:-130px;bottom:-170px;transform:rotate(-9deg)}.cta:after{left:auto;right:-160px;bottom:-145px;transform:rotate(10deg)}.cta>*{position:relative;z-index:2}.cta h2{font-size:24px;margin:0 0 3px}.cta p{font-size:11px;color:#c6d5e8;margin:0 0 16px}.contact-row{display:flex;justify-content:center;gap:28px;flex-wrap:wrap;font-size:11px;color:#d4e0ee;margin-top:22px}.contact-row span{display:inline-flex;gap:7px;align-items:center}.footer{background:#071a34;color:#fff;border-top:1px solid rgba(255,255,255,.08);padding:25px 0 17px}.footer-top{display:flex;align-items:center;justify-content:space-between;gap:20px}.footer-brand{font-size:25px;font-weight:800}.footer-sub{font-size:10px;color:#b7c8dd;margin-top:2px}.social{display:flex;gap:10px}.social span{width:28px;height:28px;border-radius:50%;display:grid;place-items:center;background:#173a66;font-size:11px}.copyright{text-align:center;border-top:1px solid rgba(255,255,255,.08);padding-top:13px;margin-top:20px;color:#91a7c1;font-size:9px}
-@media(max-width:900px){.hero{background-position:58% center}.hero-ad-card{right:8px;top:45px;transform:scale(.85);transform-origin:top right}.hero-copy{padding-bottom:0}.nav-links{gap:15px}.nav-links a:not(.nav-cta){display:none}.hero-grid{grid-template-columns:1fr}.hero-copy{padding-bottom:0}.hero-art{height:390px}.hero-art img{width:600px;right:50%;transform:translateX(50%)}.cards{grid-template-columns:repeat(2,1fr)}.why-grid{grid-template-columns:1fr}.logos{grid-template-columns:repeat(3,1fr)}}
-@media(max-width:560px){.hero-ad-card{display:none}.hero{background-image:linear-gradient(180deg,rgba(4,18,38,.96) 0%,rgba(4,18,38,.78) 43%,rgba(4,18,38,.18) 100%),url("/assets/ganesha-hero-mobile.webp");background-position:center top;min-height:780px}.container{width:min(var(--max),calc(100% - 28px))}header{padding:15px 0}.brand{font-size:24px}.hero{padding-top:100px;min-height:760px}.hero h1{font-size:42px;letter-spacing:-2px}.hero h2{font-size:25px}.hero-art{height:350px}.hero-art img{width:500px}.hero-actions{flex-wrap:wrap}.cards{grid-template-columns:1fr}.features{grid-template-columns:1fr}.logos{grid-template-columns:repeat(2,1fr)}section{padding:60px 0}.footer-top{align-items:flex-start;flex-direction:column}}
+:root {
+  --primary-blue: #2563eb;
+  --primary-blue-hover: #1d4ed8;
+  --cyan: #38bdf8;
+  --cyan-glow: rgba(56, 189, 248, 0.4);
+  --dark-bg: #040e1d;
+  --navy-hero: #051326;
+  --navy-hero-2: #071936;
+  --navy-hero-3: #0a2246;
+  --navy-text: #0f172a;
+  --slate-text: #475569;
+  --muted-text: #64748b;
+  --light-bg: #f8fafc;
+  --card-border: #e2e8f0;
+  --card-border-hover: #93c5fd;
+  --card-shadow: 0 10px 30px -10px rgba(15, 23, 42, 0.08);
+  --card-shadow-hover: 0 22px 45px -12px rgba(37, 99, 235, 0.16);
+  --max-w: 1220px;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  color: var(--navy-text);
+  background-color: #ffffff;
+}
+
+body {
+  overflow-x: hidden;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.2s ease;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.container {
+  width: min(var(--max-w), calc(100% - 48px));
+  margin: 0 auto;
+}
+
+/* ==========================================================================
+   Scroll-Triggered Reveal Animations
+   ========================================================================== */
+.reveal-up {
+  opacity: 0;
+  transform: translateY(36px);
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+.reveal-up.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.delay-1 { transition-delay: 0.06s; }
+.delay-2 { transition-delay: 0.12s; }
+.delay-3 { transition-delay: 0.18s; }
+.delay-4 { transition-delay: 0.24s; }
+.delay-5 { transition-delay: 0.30s; }
+.delay-6 { transition-delay: 0.36s; }
+.delay-7 { transition-delay: 0.42s; }
+.delay-8 { transition-delay: 0.48s; }
+
+/* Gentle Floating Animation for Lord Ganesha */
+@keyframes floatGanesha {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-9px);
+  }
+}
+
+@keyframes pulseAura {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.28;
+  }
+  50% {
+    transform: scale(1.08);
+    opacity: 0.45;
+  }
+}
+
+/* Rising Bar Animation for Ads Chart */
+@keyframes barGrow {
+  0% { transform: scaleY(0.3); transform-origin: bottom; }
+  100% { transform: scaleY(1); transform-origin: bottom; }
+}
+
+/* ==========================================================================
+   Header & Navigation
+   ========================================================================== */
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
+  padding: 24px 0;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+/* Brand Logo */
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.brand-icon {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
+
+.brand:hover .brand-icon {
+  transform: rotate(12deg) scale(1.05);
+}
+
+.brand-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.brand-name {
+  font-size: 26px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  color: #ffffff;
+  line-height: 1;
+}
+
+.brand-tagline {
+  font-size: 10.5px;
+  font-weight: 500;
+  color: #94a3b8;
+  letter-spacing: 0.2px;
+  margin-top: 3px;
+}
+
+/* Nav links */
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+  list-style: none;
+}
+
+.nav-link {
+  font-size: 15px;
+  font-weight: 500;
+  color: #cbd5e1;
+  position: relative;
+  padding: 6px 0;
+  transition: color 0.2s ease;
+}
+
+.nav-link:hover {
+  color: #ffffff;
+}
+
+.nav-link.active {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.nav-link.active::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: #38bdf8;
+  border-radius: 2px;
+  box-shadow: 0 0 8px #38bdf8;
+}
+
+.nav-cta {
+  background: var(--primary-blue);
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 14.5px;
+  padding: 10px 24px;
+  border-radius: 9999px;
+  box-shadow: 0 4px 14px rgba(37, 99, 235, 0.4);
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.nav-cta:hover {
+  background: var(--primary-blue-hover);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(37, 99, 235, 0.5);
+}
+
+.mobile-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 26px;
+  cursor: pointer;
+  padding: 4px;
+}
+
+/* ==========================================================================
+   Hero Section
+   ========================================================================== */
+.hero {
+  position: relative;
+  background: radial-gradient(circle at 60% 45%, rgba(14, 116, 244, 0.18) 0%, transparent 55%),
+              radial-gradient(circle at 20% 30%, rgba(56, 189, 248, 0.12) 0%, transparent 45%),
+              linear-gradient(135deg, #030c18 0%, #051326 40%, #071a36 75%, #092244 100%);
+  color: #ffffff;
+  padding: 140px 0 80px;
+  overflow: hidden;
+  min-height: 680px;
+}
+
+.hero-backdrop-arcs {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.hero-backdrop-arcs svg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-container {
+  position: relative;
+  z-index: 3;
+  display: grid;
+  grid-template-columns: 1.05fr 1fr 270px;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Left Copy */
+.hero-copy {
+  padding-right: 10px;
+}
+
+.hero-kicker {
+  font-size: 14px;
+  font-weight: 500;
+  color: #93c5fd;
+  letter-spacing: 0.5px;
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.hero-kicker .divider {
+  color: #38bdf8;
+  opacity: 0.6;
+}
+
+.hero-brand-heading {
+  font-size: clamp(48px, 6vw, 76px);
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -2px;
+  margin-bottom: 14px;
+  color: #ffffff;
+}
+
+.hero-brand-heading .grad {
+  background: linear-gradient(90deg, #7dd3fc 0%, #38bdf8 50%, #60a5fa 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.hero-title {
+  font-size: clamp(24px, 3.2vw, 38px);
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.8px;
+  color: #ffffff;
+  margin-bottom: 18px;
+}
+
+.hero-desc {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #cbd5e1;
+  max-width: 480px;
+  margin-bottom: 28px;
+}
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--primary-blue);
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 13px 28px;
+  border-radius: 9999px;
+  box-shadow: 0 6px 20px rgba(37, 99, 235, 0.45);
+  border: none;
+  cursor: pointer;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-primary:hover {
+  background: var(--primary-blue-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(37, 99, 235, 0.6);
+}
+
+.btn-primary svg {
+  transition: transform 0.2s ease;
+}
+
+.btn-primary:hover svg {
+  transform: translateX(4px);
+}
+
+/* Center: Lord Ganesha Transparent Artwork */
+.hero-center-art {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ganesha-aura {
+  position: absolute;
+  width: 440px;
+  height: 440px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(251, 191, 36, 0.32) 0%, rgba(245, 158, 11, 0.16) 45%, transparent 70%);
+  filter: blur(28px);
+  z-index: 1;
+  animation: pulseAura 5s ease-in-out infinite;
+  pointer-events: none;
+}
+
+.ganesha-image {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  object-fit: contain;
+  background: transparent;
+  filter: drop-shadow(0 18px 38px rgba(0, 0, 0, 0.45));
+  animation: floatGanesha 6.5s ease-in-out infinite;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+/* Right: Floating Glassmorphic Google Ads Hero Card */
+.hero-ads-badge {
+  position: relative;
+  z-index: 3;
+  background: rgba(8, 22, 46, 0.78);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(56, 189, 248, 0.3);
+  border-radius: 20px;
+  padding: 24px 22px;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.45), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  max-width: 260px;
+  justify-self: end;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.hero-ads-badge:hover {
+  transform: translateY(-4px);
+  border-color: rgba(56, 189, 248, 0.55);
+}
+
+.ads-badge-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.ads-badge-logo {
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+}
+
+.ads-badge-title {
+  font-size: 17px;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: -0.3px;
+}
+
+.ads-badge-chart {
+  position: relative;
+  padding: 8px 0;
+}
+
+.ads-badge-chart svg {
+  width: 100%;
+  height: 80px;
+}
+
+.ads-badge-points {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding-top: 14px;
+}
+
+.ads-badge-points li {
+  font-size: 13.5px;
+  font-weight: 600;
+  color: #e2e8f0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.ads-badge-points li::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #38bdf8;
+  box-shadow: 0 0 6px #38bdf8;
+}
+
+/* ==========================================================================
+   Section Headers (Universal)
+   ========================================================================== */
+.section {
+  padding: 95px 0;
+}
+
+.section-head {
+  text-align: center;
+  max-width: 760px;
+  margin: 0 auto 50px;
+}
+
+.section-label {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #0284c7;
+  margin-bottom: 12px;
+}
+
+.section-title {
+  font-size: clamp(28px, 4vw, 38px);
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: -1px;
+  color: #0f172a;
+  margin-bottom: 14px;
+}
+
+.section-sub {
+  font-size: 15.5px;
+  line-height: 1.6;
+  color: #64748b;
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+/* ==========================================================================
+   Services Section (4 Classy Cards)
+   ========================================================================== */
+.services-section {
+  background: #ffffff;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.service-card {
+  background: #ffffff;
+  border: 1px solid var(--card-border);
+  border-radius: 18px;
+  padding: 32px 26px 26px;
+  box-shadow: var(--card-shadow);
+  display: flex;
+  flex-direction: column;
+  transition: all 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  border-color: var(--card-border-hover);
+  box-shadow: var(--card-shadow-hover);
+}
+
+.service-icon-box {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 22px;
+  transition: transform 0.25s ease;
+}
+
+.service-card:hover .service-icon-box {
+  transform: scale(1.08);
+}
+
+/* Specific colors matching reference image */
+.service-icon-box.it {
+  background-color: #e0f2fe;
+  color: #0284c7;
+}
+
+.service-icon-box.ads {
+  background-color: #eff6ff;
+  color: #2563eb;
+}
+
+.service-icon-box.marketing {
+  background-color: #f3e8ff;
+  color: #9333ea;
+}
+
+.service-icon-box.design {
+  background-color: #ffedd5;
+  color: #ea580c;
+}
+
+.service-card-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #0f172a;
+  letter-spacing: -0.4px;
+  margin-bottom: 8px;
+}
+
+.service-card-desc {
+  font-size: 13.5px;
+  line-height: 1.5;
+  color: #64748b;
+  margin-bottom: 20px;
+}
+
+.service-card-list {
+  list-style: none;
+  margin-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+}
+
+.service-card-list li {
+  font-size: 13px;
+  font-weight: 500;
+  color: #334155;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.service-card-list li svg {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+  color: #0d9488;
+}
+
+.service-card-link {
+  margin-top: auto;
+  font-size: 13.5px;
+  font-weight: 700;
+  color: var(--primary-blue);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: gap 0.2s ease;
+}
+
+.service-card-link:hover {
+  gap: 10px;
+  color: var(--primary-blue-hover);
+}
+
+/* ==========================================================================
+   Why Choose Section
+   ========================================================================== */
+.why-section {
+  background: linear-gradient(180deg, #f8fafc 0%, #f1f5f9 100%);
+  border-top: 1px solid #edf2f7;
+  border-bottom: 1px solid #edf2f7;
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: 1.05fr 1.15fr 1fr;
+  align-items: center;
+  gap: 40px;
+}
+
+.why-left-title {
+  font-size: clamp(30px, 3.8vw, 42px);
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -1px;
+  color: #0f172a;
+  margin: 10px 0 16px;
+}
+
+.why-left-desc {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #64748b;
+  max-width: 380px;
+}
+
+/* Center: 2x2 Features */
+.features-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px 24px;
+}
+
+.feature-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  transition: transform 0.25s ease;
+}
+
+.feature-item:hover {
+  transform: translateY(-2px);
+}
+
+.feature-icon-wrapper {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: #ffffff;
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.06);
+  border: 1px solid #e2e8f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: #0284c7;
+  transition: all 0.25s ease;
+}
+
+.feature-item:hover .feature-icon-wrapper {
+  background: #e0f2fe;
+  color: #0369a1;
+  border-color: #bae6fd;
+}
+
+.feature-title {
+  font-size: 14px;
+  font-weight: 700;
+  color: #0f172a;
+  line-height: 1.3;
+}
+
+.feature-sub {
+  font-size: 13px;
+  color: #64748b;
+}
+
+/* Right: Google Ads Partner Card */
+.why-ads-card {
+  background: #ffffff;
+  border: 1px solid var(--card-border);
+  border-radius: 18px;
+  padding: 30px 26px;
+  box-shadow: var(--card-shadow);
+  transition: transform 0.28s ease, box-shadow 0.28s ease;
+}
+
+.why-ads-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--card-shadow-hover);
+  border-color: var(--card-border-hover);
+}
+
+.why-ads-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 16px;
+}
+
+.why-ads-logo {
+  width: 42px;
+  height: 42px;
+  flex-shrink: 0;
+}
+
+.why-ads-names {
+  display: flex;
+  flex-direction: column;
+}
+
+.why-ads-name {
+  font-size: 18px;
+  font-weight: 800;
+  color: #0f172a;
+  letter-spacing: -0.3px;
+}
+
+.why-ads-status {
+  font-size: 12px;
+  font-weight: 600;
+  color: #64748b;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.why-ads-status svg {
+  width: 14px;
+  height: 14px;
+  color: #2563eb;
+}
+
+.why-ads-desc {
+  font-size: 13.5px;
+  line-height: 1.6;
+  color: #64748b;
+  margin-bottom: 22px;
+}
+
+.why-ads-link {
+  font-size: 13.5px;
+  font-weight: 700;
+  color: var(--primary-blue);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: gap 0.2s ease;
+}
+
+.why-ads-link:hover {
+  gap: 10px;
+  color: var(--primary-blue-hover);
+}
+
+/* ==========================================================================
+   Partners & Enterprise Clients Section (Global & Leading Indian Brands)
+   ========================================================================== */
+.partners-section {
+  background: #ffffff;
+  padding: 85px 0 95px;
+  text-align: center;
+}
+
+.partners-title {
+  font-size: clamp(24px, 3.2vw, 34px);
+  font-weight: 800;
+  color: #0f172a;
+  letter-spacing: -0.6px;
+  margin-bottom: 12px;
+}
+
+.partners-subtitle {
+  font-size: 14.5px;
+  color: #64748b;
+  max-width: 620px;
+  margin: 0 auto 40px;
+}
+
+/* Category Filter Tags */
+.partners-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 35px;
+  flex-wrap: wrap;
+}
+
+.tab-btn {
+  padding: 7px 18px;
+  border-radius: 9999px;
+  font-size: 13px;
+  font-weight: 600;
+  border: 1px solid #e2e8f0;
+  background: #f8fafc;
+  color: #64748b;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.tab-btn.active, .tab-btn:hover {
+  background: var(--primary-blue);
+  color: #ffffff;
+  border-color: var(--primary-blue);
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.25);
+}
+
+.logos-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px;
+  align-items: stretch;
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.partner-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  padding: 20px 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 104px;
+  transition: all 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.03);
+}
+
+.partner-card:hover {
+  transform: translateY(-5px);
+  border-color: #93c5fd;
+  box-shadow: 0 12px 24px -6px rgba(37, 99, 235, 0.14);
+}
+
+.partner-card svg {
+  max-height: 38px;
+  width: auto;
+  max-width: 130px;
+  transition: transform 0.25s ease;
+}
+
+.partner-card:hover svg {
+  transform: scale(1.05);
+}
+
+.partner-badge {
+  font-size: 10.5px;
+  font-weight: 700;
+  color: #64748b;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.partner-badge.india {
+  color: #ea580c; /* Tricolor saffron hint */
+}
+
+/* ==========================================================================
+   CTA Section & Curved Wave Transition to Footer
+   ========================================================================== */
+.cta-footer-wrap {
+  position: relative;
+  background: linear-gradient(135deg, #030a16 0%, #06152b 45%, #081d38 80%, #0a2548 100%);
+  color: #ffffff;
+  overflow: hidden;
+}
+
+.curved-wave-top {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.curved-wave-top svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 70px;
+}
+
+.curved-wave-top .shape-fill {
+  fill: #ffffff;
+}
+
+.cta-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 40px 0 45px;
+}
+
+.cta-heading {
+  font-size: clamp(26px, 3.5vw, 36px);
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: -0.8px;
+  margin-bottom: 10px;
+}
+
+.cta-sub {
+  font-size: 15px;
+  color: #cbd5e1;
+  margin-bottom: 26px;
+}
+
+.cta-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  background: var(--primary-blue);
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 13px 32px;
+  border-radius: 9999px;
+  box-shadow: 0 6px 22px rgba(37, 99, 235, 0.45);
+  transition: all 0.25s ease;
+  cursor: pointer;
+  border: none;
+}
+
+.cta-btn:hover {
+  background: var(--primary-blue-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 28px rgba(37, 99, 235, 0.6);
+}
+
+.cta-meta-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  margin-top: 32px;
+  font-size: 14px;
+  color: #cbd5e1;
+  flex-wrap: wrap;
+}
+
+.meta-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  padding: 6px 12px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: all 0.25s ease;
+}
+
+.meta-item:hover {
+  color: #38bdf8;
+  background: rgba(56, 189, 248, 0.1);
+  border-color: rgba(56, 189, 248, 0.3);
+  transform: translateY(-2px);
+}
+
+.meta-item svg {
+  width: 17px;
+  height: 17px;
+  color: #38bdf8;
+}
+
+.cta-socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+  margin-top: 26px;
+}
+
+.social-circle-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #e2e8f0;
+  transition: all 0.25s ease;
+}
+
+.social-circle-btn:hover {
+  background: var(--primary-blue);
+  color: #ffffff;
+  border-color: var(--primary-blue);
+  transform: translateY(-3px) scale(1.08);
+  box-shadow: 0 6px 16px rgba(37, 99, 235, 0.4);
+}
+
+.social-circle-btn svg {
+  width: 17px;
+  height: 17px;
+}
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 30px 0;
+}
+
+.footer-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.footer-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-copy {
+  font-size: 13px;
+  color: #94a3b8;
+}
+
+.footer-copy span {
+  margin: 0 8px;
+  opacity: 0.5;
+}
+
+/* ==========================================================================
+   Consultation Modal
+   ========================================================================== */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(3, 10, 22, 0.82);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  z-index: 100;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+.modal-overlay.active {
+  display: flex;
+  opacity: 1;
+}
+
+.modal-card {
+  background: #ffffff;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 520px;
+  padding: 36px 32px;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.35);
+  position: relative;
+  transform: scale(0.95);
+  transition: transform 0.25s ease;
+}
+
+.modal-overlay.active .modal-card {
+  transform: scale(1);
+}
+
+.modal-close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: #f1f5f9;
+  border: none;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #64748b;
+  cursor: pointer;
+  font-size: 18px;
+  transition: all 0.2s ease;
+}
+
+.modal-close-btn:hover {
+  background: #e2e8f0;
+  color: #0f172a;
+}
+
+.modal-title {
+  font-size: 24px;
+  font-weight: 800;
+  color: #0f172a;
+  margin-bottom: 8px;
+}
+
+.modal-desc {
+  font-size: 14px;
+  color: #64748b;
+  margin-bottom: 24px;
+}
+
+.form-group {
+  margin-bottom: 16px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  color: #334155;
+  margin-bottom: 6px;
+}
+
+.form-control {
+  width: 100%;
+  padding: 11px 14px;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  font-size: 14px;
+  color: #0f172a;
+  outline: none;
+  font-family: inherit;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-control:focus {
+  border-color: var(--primary-blue);
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+.form-submit-btn {
+  width: 100%;
+  background: var(--primary-blue);
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 13px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: all 0.2s ease;
+}
+
+.form-submit-btn:hover {
+  background: var(--primary-blue-hover);
+}
+
+.form-success-msg {
+  display: none;
+  background: #ecfdf5;
+  color: #065f46;
+  border: 1px solid #a7f3d0;
+  padding: 14px;
+  border-radius: 10px;
+  font-size: 14px;
+  margin-top: 16px;
+  text-align: center;
+}
+
+.toast-msg {
+  position: fixed;
+  bottom: 28px;
+  left: 50%;
+  transform: translateX(-50%) translateY(100px);
+  background: #0f172a;
+  color: #ffffff;
+  padding: 12px 24px;
+  border-radius: 9999px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  font-size: 14px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  z-index: 200;
+  opacity: 0;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  pointer-events: none;
+}
+
+.toast-msg.show {
+  transform: translateX(-50%) translateY(0);
+  opacity: 1;
+}
+
+/* ==========================================================================
+   Responsive Breakpoints
+   ========================================================================== */
+@media (max-width: 1100px) {
+  .hero-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+  .hero-ads-badge {
+    grid-column: span 2;
+    justify-self: center;
+    max-width: 380px;
+    flex-direction: row;
+    align-items: center;
+    padding: 18px 24px;
+  }
+  .ads-badge-chart {
+    display: none;
+  }
+  .ads-badge-points {
+    border-top: none;
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 0;
+    padding-left: 18px;
+  }
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .why-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .logos-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 18px 0;
+  }
+  .nav-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 20px;
+    right: 20px;
+    background: #071936;
+    border: 1px solid rgba(56, 189, 248, 0.2);
+    border-radius: 16px;
+    padding: 20px;
+    flex-direction: column;
+    gap: 16px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+  }
+  .nav-menu.open {
+    display: flex;
+  }
+  .mobile-toggle {
+    display: block;
+  }
+  .hero {
+    padding: 110px 0 60px;
+  }
+  .hero-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 36px;
+  }
+  .hero-kicker {
+    justify-content: center;
+  }
+  .hero-desc {
+    margin: 0 auto 28px;
+  }
+  .ganesha-aura {
+    width: 320px;
+    height: 320px;
+  }
+  .ganesha-image {
+    max-width: 380px;
+  }
+  .hero-ads-badge {
+    grid-column: 1;
+    max-width: 100%;
+    flex-direction: column;
+  }
+  .ads-badge-points {
+    border-left: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-left: 0;
+    padding-top: 14px;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+  .logos-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+  }
+  .footer-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+}
 </style>
 </head>
 <body>
-<header>
-<div class="container"><nav>
-<a class="brand" href="#top"><span class="brand-mark"><svg viewBox="0 0 40 40" fill="none"><path d="M20 33c0-8 2-13 7-18 3-3 5-7 4-11-6 2-10 6-12 12-2-5-6-9-12-11-1 6 1 10 5 13 5 4 7 9 7 15" fill="#4dd8ff"/><path d="M20 33c-1-8-4-13-10-16-3-2-5-5-5-9 7 1 12 4 15 10 2-6 6-10 13-12 1 6-1 10-5 13-5 4-7 9-8 14" fill="#4f79f6"/></svg></span><span>devinrc<small>IT · Digital Marketing · Google Ads</small></span></a>
-<div class="nav-links"><a href="#top">Home</a><a href="#services">Services</a><a href="#why">About</a><a href="#contact">Contact</a><a class="nav-cta" href="#contact">Get Started</a></div>
-</nav></div>
+
+<!-- Header -->
+<header id="header">
+  <div class="container navbar">
+    <a class="brand" href="#top">
+      <div class="brand-icon">
+        <!-- 5-petal radiant lotus brand icon -->
+        <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="p1" x1="0%" y1="100%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#38bdf8"/>
+              <stop offset="100%" stop-color="#0284c7"/>
+            </linearGradient>
+            <linearGradient id="p2" x1="0%" y1="100%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#0ea5e9"/>
+              <stop offset="100%" stop-color="#2563eb"/>
+            </linearGradient>
+            <linearGradient id="p3" x1="0%" y1="100%" x2="0%" y2="0%">
+              <stop offset="0%" stop-color="#2563eb"/>
+              <stop offset="100%" stop-color="#60a5fa"/>
+            </linearGradient>
+            <linearGradient id="p4" x1="100%" y1="100%" x2="0%" y2="0%">
+              <stop offset="0%" stop-color="#2563eb"/>
+              <stop offset="100%" stop-color="#0ea5e9"/>
+            </linearGradient>
+            <linearGradient id="p5" x1="100%" y1="100%" x2="0%" y2="0%">
+              <stop offset="0%" stop-color="#1d4ed8"/>
+              <stop offset="100%" stop-color="#38bdf8"/>
+            </linearGradient>
+          </defs>
+          <path d="M20 34 C18 25, 14 14, 20 6 C26 14, 22 25, 20 34 Z" fill="url(#p3)"/>
+          <path d="M20 34 C16 26, 9 19, 11 11 C18 13, 20 22, 20 34 Z" fill="url(#p2)"/>
+          <path d="M20 34 C24 26, 31 19, 29 11 C22 13, 20 22, 20 34 Z" fill="url(#p4)"/>
+          <path d="M20 34 C14 28, 4 24, 4 17 C11 17, 17 25, 20 34 Z" fill="url(#p1)"/>
+          <path d="M20 34 C26 28, 36 24, 36 17 C29 17, 23 25, 20 34 Z" fill="url(#p5)"/>
+        </svg>
+      </div>
+      <div class="brand-text">
+        <span class="brand-name">devinrc</span>
+        <span class="brand-tagline">IT · Digital Marketing · Google Ads</span>
+      </div>
+    </a>
+
+    <!-- Navigation Menu -->
+    <ul class="nav-menu" id="navMenu">
+      <li><a class="nav-link active" href="#top">Home</a></li>
+      <li><a class="nav-link" href="#services">Services</a></li>
+      <li><a class="nav-link" href="#why">About</a></li>
+      <li><a class="nav-link" href="#partners">Partners</a></li>
+      <li><a class="nav-link" href="#contact">Contact</a></li>
+      <li><a class="nav-cta" href="#contact" onclick="openConsultationModal('Get Started')">Get Started</a></li>
+    </ul>
+
+    <!-- Mobile Menu Toggle Button -->
+    <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Navigation Menu">
+      ☰
+    </button>
+  </div>
 </header>
+
 <main id="top">
-<section class="hero"><div class="container hero-grid">
-<div class="hero-copy">
-<div class="hero-kicker">Your Growth <span>|</span> Our Technology <span>|</span> Together</div>
-<h1><span class="grad">devinrc</span></h1>
-<h2>IT & Digital Marketing<br>Services Provider</h2>
-<p>We help businesses grow with modern IT solutions, Google Ads, and digital marketing strategies that deliver real results.</p>
-<div class="hero-actions"><a class="btn btn-primary" href="mailto:hello@devinrc.com">Get a Free Consultation <span>→</span></a></div>
-</div>
-<div class="hero-art"><img src="/assets/ganesha-hero.webp" alt="Ganesha artwork for DevinRC"><div class="hero-ad-card"><div class="hero-ad-logo"><span class="admark"></span><span>Google Ads</span></div><div class="hero-ad-arrow">↗</div><div class="hero-ad-copy">More Traffic<br>Higher Conversions<br>Better ROI</div></div></div>
-</div></section>
+  <!-- Hero Section -->
+  <section class="hero">
+    <!-- Ambient flow lines -->
+    <div class="hero-backdrop-arcs" aria-hidden="true">
+      <svg viewBox="0 0 1440 700" fill="none" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M-100 680 C300 660, 600 520, 1100 620 C1300 660, 1500 640, 1600 630" stroke="rgba(56, 189, 248, 0.18)" stroke-width="2"/>
+        <path d="M-100 640 C400 630, 800 480, 1300 590 C1450 620, 1550 610, 1600 600" stroke="rgba(37, 99, 235, 0.22)" stroke-width="1.5"/>
+        <path d="M-50 720 C250 690, 750 580, 1200 680" stroke="rgba(56, 189, 248, 0.12)" stroke-width="1"/>
+      </svg>
+    </div>
 
-<section id="services" class="services"><div class="container">
-<div class="section-title"><div class="section-label">Our Services</div><h2>Complete Digital Solutions for Your Business</h2><p>From IT support to performance marketing, we provide end-to-end services to help you achieve your goals and grow online.</p></div>
-<div class="cards">
-<article class="card"><div class="icon i-blue">⌘</div><h3>IT Services</h3><p>Reliable IT solutions for a smarter tomorrow.</p><ul><li>Web Development</li><li>App Development</li><li>Cloud Solutions</li><li>IT Support & Maintenance</li></ul><a class="learn" href="#contact">Learn More →</a></article>
-<article class="card"><div class="icon i-green">◢</div><h3>Google Ads</h3><p>Get seen. Get clicks. Grow faster.</p><ul><li>Search Ads</li><li>Display Ads</li><li>Video Ads</li><li>Campaign Management</li></ul><a class="learn" href="#contact">Learn More →</a></article>
-<article class="card"><div class="icon i-purple">⚑</div><h3>Digital Marketing</h3><p>Build your brand. Reach your audience.</p><ul><li>SEO (Search Engine Optimization)</li><li>Social Media Marketing</li><li>Content Marketing</li><li>Email Marketing</li></ul><a class="learn" href="#contact">Learn More →</a></article>
-<article class="card"><div class="icon i-orange">◉</div><h3>Creative & Design</h3><p>Stunning designs that make an impact.</p><ul><li>Logo Design</li><li>Website Design</li><li>Social Media Graphics</li><li>Branding & Identity</li></ul><a class="learn" href="#contact">Learn More →</a></article>
-</div></div></section>
+    <div class="container hero-container">
+      <!-- Left Copy -->
+      <div class="hero-copy reveal-up is-visible">
+        <div class="hero-kicker">
+          Your Growth <span class="divider">|</span> Our Technology <span class="divider">|</span> Together
+        </div>
+        <h1 class="hero-brand-heading">devin<span class="grad">rc</span></h1>
+        <h2 class="hero-title">IT & Digital Marketing<br>Services Provider</h2>
+        <p class="hero-desc">We help businesses grow with modern IT solutions, Google Ads, and digital marketing strategies that deliver real results.</p>
+        <button class="btn-primary" onclick="openConsultationModal('Hero Consultation')">
+          Get a Free Consultation
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </button>
+      </div>
 
-<section id="why" class="why"><div class="container why-grid">
-<div><div class="section-label">Why Choose DevinRC</div><h2>Your Success<br>Is Our Priority</h2><p>We combine technology, creativity and data-driven strategies to deliver measurable results and long-term growth.</p></div>
-<div class="features"><div class="feature"><div class="fi">ϟ</div><div><strong>Fast & Reliable</strong>Service</div></div><div class="feature"><div class="fi">♢</div><div><strong>Experienced</strong>Team</div></div><div class="feature"><div class="fi">◎</div><div><strong>Results-Driven</strong>Approach</div></div><div class="feature"><div class="fi">◉</div><div><strong>24/7</strong>Support</div></div></div>
-<div class="ads-card"><div class="ads-logo"><span class="a" aria-hidden="true"></span><span>Google Ads</span></div><p>We create, manage and optimize Google Ads campaigns to bring you more customers.</p><a class="ads-link" href="#contact">Start Your Campaign →</a></div>
-</div></section>
+      <!-- Center: Fully Transparent Lord Ganesha Artwork -->
+      <div class="hero-center-art reveal-up delay-2 is-visible">
+        <div class="ganesha-aura" aria-hidden="true"></div>
+        <picture>
+          <source media="(max-width: 640px)" srcset="/assets/ganesha-hero-mobile.webp" type="image/webp">
+          <source srcset="/assets/ganesha-hero.webp" type="image/webp">
+          <img
+            class="ganesha-image"
+            src="/assets/ganesha-hero.png"
+            alt="DevinRC - Divine Blessing for Business Success with Lord Ganesha"
+            width="600"
+            height="448"
+            fetchpriority="high"
+            loading="eager"
+          >
+        </picture>
+      </div>
 
-<section class="partners"><div class="container"><div class="section-label">Our Clients & Partners</div><div class="partner-title">Trusted by Businesses Worldwide</div><div class="logos"><div class="logo google">Google</div><div class="logo ms">▦ Microsoft</div><div class="logo meta">∞ Meta</div><div class="logo aws">aws</div><div class="logo cf">☁ Cloudflare</div><div class="logo wp">◉ WordPress</div></div></div></section>
+      <!-- Right: Floating Google Ads Hero Card -->
+      <aside class="hero-ads-badge reveal-up delay-3 is-visible" aria-label="Google Ads Highlights">
+        <div class="ads-badge-header">
+          <svg class="ads-badge-logo" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12.5 35.5L25 14C26.1 12.1 28.5 11.5 30.4 12.6C32.3 13.7 32.9 16.1 31.8 18L19.3 39.5C18.2 41.4 15.8 42 13.9 40.9C12 39.8 11.4 37.4 12.5 35.5Z" fill="#FABB05"/>
+            <path d="M42.2 31.8L29.7 10.3C28.6 8.4 26.2 7.8 24.3 8.9C22.4 10 21.8 12.4 22.9 14.3L35.4 35.8C36.5 37.7 38.9 38.3 40.8 37.2C42.7 36.1 43.3 33.7 42.2 31.8Z" fill="#4285F4"/>
+            <circle cx="15.8" cy="38.2" r="5.8" fill="#34A853"/>
+          </svg>
+          <span class="ads-badge-title">Google Ads</span>
+        </div>
 
-<section id="contact" class="cta"><div class="container"><h2>Ready to Grow Your Business?</h2><p>Let's build something great together. Get in touch with us today!</p><a class="btn btn-primary" href="mailto:hello@devinrc.com">Contact Us →</a><div class="contact-row"><span>✉ hello@devinrc.com</span><span>⌖ Global Services</span></div></div></section>
+        <!-- 3D Growing Bar Chart with Rising Arrow -->
+        <div class="ads-badge-chart" aria-hidden="true">
+          <svg viewBox="0 0 200 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="barGlow" x1="0%" y1="100%" x2="0%" y2="0%">
+                <stop offset="0%" stop-color="#1e3a8a"/>
+                <stop offset="100%" stop-color="#38bdf8"/>
+              </linearGradient>
+              <linearGradient id="arrowGlow" x1="0%" y1="100%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#38bdf8"/>
+                <stop offset="100%" stop-color="#ffffff"/>
+              </linearGradient>
+            </defs>
+            <rect x="20" y="52" width="22" height="28" rx="4" fill="url(#barGlow)" opacity="0.6"/>
+            <rect x="52" y="38" width="22" height="42" rx="4" fill="url(#barGlow)" opacity="0.75"/>
+            <rect x="84" y="24" width="22" height="56" rx="4" fill="url(#barGlow)" opacity="0.9"/>
+            <rect x="116" y="8" width="22" height="72" rx="4" fill="url(#barGlow)"/>
+            <path d="M22 62 Q 80 44, 150 14" stroke="url(#arrowGlow)" stroke-width="3.5" stroke-linecap="round"/>
+            <polyline points="135 12, 153 13, 148 30" fill="none" stroke="url(#arrowGlow)" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+
+        <!-- Bullet Highlights -->
+        <ul class="ads-badge-points">
+          <li>More Traffic</li>
+          <li>Higher Conversions</li>
+          <li>Better ROI</li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="section services-section">
+    <div class="container">
+      <div class="section-head reveal-up">
+        <span class="section-label">— OUR SERVICES —</span>
+        <h2 class="section-title">Complete Digital Solutions for Your Business</h2>
+        <p class="section-sub">From IT support to performance marketing, we provide end-to-end services to help you achieve your goals and grow online.</p>
+      </div>
+
+      <div class="services-grid">
+        <!-- Card 1: IT Services -->
+        <article class="service-card reveal-up delay-1">
+          <div class="service-icon-box it">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="16 18 22 12 16 6"></polyline>
+              <polyline points="8 6 2 12 8 18"></polyline>
+              <line x1="14" y1="4" x2="10" y2="20"></line>
+            </svg>
+          </div>
+          <h3 class="service-card-title">IT Services</h3>
+          <p class="service-card-desc">Reliable IT solutions for a smarter tomorrow.</p>
+          <ul class="service-card-list">
+            <li>
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+              Web Development
+            </li>
+            <li>
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+              App Development
+            </li>
+            <li>
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+              Cloud Solutions
+            </li>
+            <li>
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+              IT Support & Maintenance
+            </li>
+          </ul>
+          <a class="service-card-link" href="#contact" onclick="openConsultationModal('IT Services')">
+            Learn More <span>→</span>
+          </a>
+        </article>
+
+        <!-- Card 2: Google Ads -->
+        <article class="service-card reveal-up delay-2">
+          <div class="service-icon-box ads">
+            <svg width="28" height="28" viewBox="0 0 48 48" fill="none">
+              <path d="M12.5 35.5L25 14C26.1 12.1 28.5 11.5 30.4 12.6C32.3 13.7 32.9 16.1 31.8 18L19.3 39.5C18.2 41.4 15.8 42 13.9 40.9C12 39.8 11.4 37.4 12.5 35.5Z" fill="#FABB05"/>
+              <path d="M42.2 31.8L29.7 10.3C28.6 8.4 26.2 7.8 24.3 8.9C22.4 10 21.8 12.4 22.9 14.3L35.4 35.8C36.5 37.7 38.9 38.3 40.8 37.2C42.7 36.1 43.3 33.7 42.2 31.8Z" fill="#4285F4"/>
+              <circle cx="15.8" cy="38.2" r="5.8" fill="#34A853"/>
+            </svg>
+          </div>
+          <h3 class="service-card-title">Google Ads</h3>
+          <p class="service-card-desc">Get seen. Get clicks. Grow faster.</p>
+          <ul class="service-card-list">
+            <li>
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+              Search Ads
+            </li>
+            <li>
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+              Display Ads
+            </li>
+            <li>
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+              Video Ads
+            </li>
+            <li>
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+              Campaign Management
+            </li>
+          </ul>
+          <a class="service-card-link" href="#contact" onclick="openConsultationModal('Google Ads')">
+            Learn More <span>→</span>
+          </a>
+        </article>
+
+        <!-- Card 3: Digital Marketing -->
+        <article class="service-card reveal-up delay-3">
+          <div class="service-icon-box marketing">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M11 5L6 9H2v6h4l5 4V5z"></path>
+              <path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+              <path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path>
+            </svg>
+          </div>
+          <h3 class="service-card-title">Digital Marketing</h3>
+          <p class="service-card-desc">Build your brand. Reach your audience.</p>
+          <ul class="service-card-list">
+            <li>
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+              SEO (Search Engine Optimization)
+            </li>
+            <li>
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+              Social Media Marketing
+            </li>
+            <li>
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+              Content Marketing
+            </li>
+            <li>
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+              Email Marketing
+            </li>
+          </ul>
+          <a class="service-card-link" href="#contact" onclick="openConsultationModal('Digital Marketing')">
+            Learn More <span>→</span>
+          </a>
+        </article>
+
+        <!-- Card 4: Creative & Design -->
+        <article class="service-card reveal-up delay-4">
+          <div class="service-icon-box design">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="13.5" cy="6.5" r=".5" fill="currentColor"></circle>
+              <circle cx="17.5" cy="10.5" r=".5" fill="currentColor"></circle>
+              <circle cx="8.5" cy="7.5" r=".5" fill="currentColor"></circle>
+              <circle cx="6.5" cy="12.5" r=".5" fill="currentColor"></circle>
+              <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.563-2.512 5.563-5.563C22 6.5 17.5 2 12 2z"></path>
+            </svg>
+          </div>
+          <h3 class="service-card-title">Creative & Design</h3>
+          <p class="service-card-desc">Stunning designs that make an impact.</p>
+          <ul class="service-card-list">
+            <li>
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+              Logo Design
+            </li>
+            <li>
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+              Website Design
+            </li>
+            <li>
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+              Social Media Graphics
+            </li>
+            <li>
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+              Branding & Identity
+            </li>
+          </ul>
+          <a class="service-card-link" href="#contact" onclick="openConsultationModal('Creative & Design')">
+            Learn More <span>→</span>
+          </a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose DevinRC Section -->
+  <section id="why" class="section why-section">
+    <div class="container why-grid">
+      <!-- Left Column -->
+      <div class="reveal-up">
+        <span class="section-label">WHY CHOOSE DEVINRC</span>
+        <h2 class="why-left-title">Your Success<br>Is Our Priority</h2>
+        <p class="why-left-desc">We combine technology, creativity and data-driven strategies to deliver measurable results and long-term growth.</p>
+      </div>
+
+      <!-- Center 2x2 Feature Grid -->
+      <div class="features-grid">
+        <!-- Feature 1 -->
+        <div class="feature-item reveal-up delay-1">
+          <div class="feature-icon-wrapper">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+            </svg>
+          </div>
+          <div>
+            <div class="feature-title">Fast & Reliable</div>
+            <div class="feature-sub">Service</div>
+          </div>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="feature-item reveal-up delay-2">
+          <div class="feature-icon-wrapper">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              <polyline points="9 12 11 14 15 10"></polyline>
+            </svg>
+          </div>
+          <div>
+            <div class="feature-title">Experienced</div>
+            <div class="feature-sub">Team</div>
+          </div>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="feature-item reveal-up delay-3">
+          <div class="feature-icon-wrapper">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"></circle>
+              <circle cx="12" cy="12" r="6"></circle>
+              <circle cx="12" cy="12" r="2"></circle>
+            </svg>
+          </div>
+          <div>
+            <div class="feature-title">Results-Driven</div>
+            <div class="feature-sub">Approach</div>
+          </div>
+        </div>
+
+        <!-- Feature 4 -->
+        <div class="feature-item reveal-up delay-4">
+          <div class="feature-icon-wrapper">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 18v-6a9 9 0 0 1 18 0v6"></path>
+              <path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"></path>
+            </svg>
+          </div>
+          <div>
+            <div class="feature-title">24/7</div>
+            <div class="feature-sub">Support</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Google Ads Partner Card -->
+      <aside class="why-ads-card reveal-up delay-3">
+        <div class="why-ads-header">
+          <svg class="why-ads-logo" viewBox="0 0 48 48" fill="none">
+            <path d="M12.5 35.5L25 14C26.1 12.1 28.5 11.5 30.4 12.6C32.3 13.7 32.9 16.1 31.8 18L19.3 39.5C18.2 41.4 15.8 42 13.9 40.9C12 39.8 11.4 37.4 12.5 35.5Z" fill="#FABB05"/>
+            <path d="M42.2 31.8L29.7 10.3C28.6 8.4 26.2 7.8 24.3 8.9C22.4 10 21.8 12.4 22.9 14.3L35.4 35.8C36.5 37.7 38.9 38.3 40.8 37.2C42.7 36.1 43.3 33.7 42.2 31.8Z" fill="#4285F4"/>
+            <circle cx="15.8" cy="38.2" r="5.8" fill="#34A853"/>
+          </svg>
+          <div class="why-ads-names">
+            <span class="why-ads-name">Google Ads</span>
+            <span class="why-ads-status">
+              Certified Partner
+              <svg viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+              </svg>
+            </span>
+          </div>
+        </div>
+        <p class="why-ads-desc">We create, manage and optimize Google Ads campaigns to bring you more customers.</p>
+        <a class="why-ads-link" href="#contact" onclick="openConsultationModal('Start Google Ads Campaign')">
+          Start Your Campaign <span>→</span>
+        </a>
+      </aside>
+    </div>
+  </section>
+
+  <!-- Clients & Partners Section (With Renowned Indian Companies & Global Tech Leaders) -->
+  <section id="partners" class="partners-section">
+    <div class="container">
+      <div class="reveal-up">
+        <span class="section-label">OUR CLIENTS & PARTNERS</span>
+        <h2 class="partners-title">Trusted by Businesses Worldwide</h2>
+        <p class="partners-subtitle">Empowering high-growth businesses and enterprises with modern IT infrastructure, digital marketing, and cloud solutions.</p>
+      </div>
+
+      <div class="logos-grid">
+        <!-- 1. TATA / TCS (India) -->
+        <div class="partner-card reveal-up delay-1" title="Tata Consultancy Services">
+          <svg viewBox="0 0 110 34" fill="none">
+            <!-- Iconic TATA Oval and T emblem -->
+            <ellipse cx="20" cy="17" rx="16" ry="14" fill="#004b97"/>
+            <path d="M12 11 H28 M20 11 V25" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
+            <text x="44" y="23" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="19" font-weight="900" letter-spacing="1.5" fill="#004b97">TATA</text>
+          </svg>
+          <span class="partner-badge india">🇮🇳 Enterprise Leader</span>
+        </div>
+
+        <!-- 2. Infosys (India) -->
+        <div class="partner-card reveal-up delay-2" title="Infosys">
+          <svg viewBox="0 0 110 34" fill="none">
+            <!-- Iconic Infosys deep cyan wordmark -->
+            <text x="8" y="24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="22" font-weight="700" letter-spacing="-0.5" fill="#007cc3">Infosys</text>
+          </svg>
+          <span class="partner-badge india">🇮🇳 Global IT Giant</span>
+        </div>
+
+        <!-- 3. Reliance Jio (India) -->
+        <div class="partner-card reveal-up delay-3" title="Reliance Jio">
+          <svg viewBox="0 0 100 34" fill="none">
+            <!-- Iconic Round Jio Emblem -->
+            <circle cx="22" cy="17" r="14" fill="#0a2885"/>
+            <!-- Jio stylized letters -->
+            <text x="14" y="22" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="900" fill="#ffffff">Jio</text>
+            <text x="44" y="22" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="15" font-weight="800" fill="#e42529">Reliance</text>
+          </svg>
+          <span class="partner-badge india">🇮🇳 Digital Ecosystem</span>
+        </div>
+
+        <!-- 4. Wipro (India) -->
+        <div class="partner-card reveal-up delay-4" title="Wipro">
+          <svg viewBox="0 0 110 34" fill="none">
+            <!-- Wipro multi-colored concentric dots array -->
+            <g transform="translate(16, 17)">
+              <circle cx="0" cy="-8" r="2.8" fill="#e11d48"/>
+              <circle cx="7" cy="-4" r="2.8" fill="#f59e0b"/>
+              <circle cx="8" cy="4" r="2.8" fill="#10b981"/>
+              <circle cx="3" cy="8" r="2.8" fill="#06b6d4"/>
+              <circle cx="-5" cy="7" r="2.8" fill="#3b82f6"/>
+              <circle cx="-8" cy="-2" r="2.8" fill="#8b5cf6"/>
+              <circle cx="0" cy="0" r="2.2" fill="#004b97"/>
+            </g>
+            <text x="36" y="23" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="19" font-weight="700" fill="#1e293b">wipro</text>
+          </svg>
+          <span class="partner-badge india">🇮🇳 Technology & Cloud</span>
+        </div>
+
+        <!-- 5. HCLTech (India) -->
+        <div class="partner-card reveal-up delay-5" title="HCLTech">
+          <svg viewBox="0 0 115 34" fill="none">
+            <text x="8" y="23" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="18" font-weight="900" letter-spacing="-0.5" fill="#001e60">HCL</text>
+            <text x="50" y="23" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="18" font-weight="600" fill="#0284c7">Tech</text>
+            <circle cx="98" cy="20" r="3" fill="#00e5ff"/>
+          </svg>
+          <span class="partner-badge india">🇮🇳 Supercharging Progress</span>
+        </div>
+
+        <!-- 6. Zoho (India) -->
+        <div class="partner-card reveal-up delay-6" title="Zoho Corporation">
+          <svg viewBox="0 0 110 34" fill="none">
+            <!-- 4 colorful square blocks of ZOHO -->
+            <rect x="6" y="8" width="18" height="18" rx="4" fill="#e11d48"/>
+            <text x="10" y="22" font-family="sans-serif" font-size="14" font-weight="900" fill="#ffffff">Z</text>
+            
+            <rect x="27" y="8" width="18" height="18" rx="4" fill="#10b981"/>
+            <text x="31" y="22" font-family="sans-serif" font-size="14" font-weight="900" fill="#ffffff">O</text>
+            
+            <rect x="48" y="8" width="18" height="18" rx="4" fill="#2563eb"/>
+            <text x="52" y="22" font-family="sans-serif" font-size="14" font-weight="900" fill="#ffffff">H</text>
+            
+            <rect x="69" y="8" width="18" height="18" rx="4" fill="#f59e0b"/>
+            <text x="73" y="22" font-family="sans-serif" font-size="14" font-weight="900" fill="#ffffff">O</text>
+          </svg>
+          <span class="partner-badge india">🇮🇳 SaaS Innovation</span>
+        </div>
+
+        <!-- 7. Google Official Multi-Color -->
+        <div class="partner-card reveal-up delay-1" title="Google Partner">
+          <svg viewBox="0 0 110 34" fill="none">
+            <path d="M17.6 13.3v4.6h11.2c-.5 2.8-2.1 5.2-4.9 6.8-2.3 1.3-5 2-8.3 2-6.5 0-11.8-5.3-11.8-11.8S9.1 3.1 15.6 3.1c3.1 0 5.9 1.1 8 3.1l3.5-3.5C23.9 0.4 19.9 -1 15.6 -1 7 -1 0 6 0 14.6s7 15.6 15.6 15.6c4.6 0 8.6-1.5 11.6-4.5 3.2-3.2 4.2-7.6 4.2-11.3 0-.7-.1-1.4-.2-2.1H17.6z" fill="#4285F4"/>
+            <text x="36" y="23" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="19" font-weight="700" fill="#475569">Google</text>
+          </svg>
+          <span class="partner-badge">Certified Partner</span>
+        </div>
+
+        <!-- 8. Microsoft Official -->
+        <div class="partner-card reveal-up delay-2" title="Microsoft Partner">
+          <svg viewBox="0 0 120 34" fill="none">
+            <rect x="2" y="6" width="10" height="10" fill="#F25022"/>
+            <rect x="14" y="6" width="10" height="10" fill="#7FBA00"/>
+            <rect x="2" y="18" width="10" height="10" fill="#00A4EF"/>
+            <rect x="14" y="18" width="10" height="10" fill="#FFB900"/>
+            <text x="32" y="23" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="600" fill="#475569">Microsoft</text>
+          </svg>
+          <span class="partner-badge">Solutions Partner</span>
+        </div>
+
+        <!-- 9. Meta Official -->
+        <div class="partner-card reveal-up delay-3" title="Meta">
+          <svg viewBox="0 0 110 34" fill="none">
+            <path d="M7 23 C3 23 1 19 1 15 C1 9 6 5 12 5 C17 5 20 9 22 12 C24 9 27 5 32 5 C38 5 43 9 43 15 C43 19 41 23 37 23 C32 23 28 18 26 15 C24 12 23 11 22 11 C21 11 20 12 18 15 C16 18 12 23 7 23 Z" fill="#0081FB"/>
+            <text x="50" y="21" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="18" font-weight="700" fill="#0081FB">Meta</text>
+          </svg>
+          <span class="partner-badge">Marketing Partner</span>
+        </div>
+
+        <!-- 10. AWS Official -->
+        <div class="partner-card reveal-up delay-4" title="AWS Partner">
+          <svg viewBox="0 0 85 34" fill="none">
+            <text x="2" y="20" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="20" font-weight="800" fill="#232F3E">aws</text>
+            <path d="M4 25 C18 31, 38 31, 52 25" stroke="#FF9900" stroke-width="2.5" stroke-linecap="round"/>
+            <polygon points="51,22 56,25 52,28" fill="#FF9900"/>
+          </svg>
+          <span class="partner-badge">Cloud Solutions</span>
+        </div>
+
+        <!-- 11. Cloudflare Official -->
+        <div class="partner-card reveal-up delay-5" title="Cloudflare">
+          <svg viewBox="0 0 120 34" fill="none">
+            <path d="M19 12 C18 9 15 7 12 7 C8 7 5 10 5 14 C2 14 0 16 0 19 C0 22 2 24 5 24 L24 24 C27 24 29 22 29 19 C29 16 27 14 24 14 C24 10 21 8 18 8 L17 8" fill="#F38020"/>
+            <text x="34" y="21" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="800" letter-spacing="0.5" fill="#475569">CLOUDFLARE</text>
+          </svg>
+          <span class="partner-badge">Security & CDN</span>
+        </div>
+
+        <!-- 12. WordPress Official -->
+        <div class="partner-card reveal-up delay-6" title="WordPress">
+          <svg viewBox="0 0 120 34" fill="none">
+            <circle cx="14" cy="17" r="12" fill="#21759B"/>
+            <path d="M6 17 C6 21.4 9.6 25 14 25 C16.5 25 18.7 23.8 20.1 22 L12.5 9.5 C9.8 11 6 13.6 6 17 Z" fill="#ffffff" fill-opacity="0.9"/>
+            <path d="M14 7 C12.2 7 10.6 7.6 9.3 8.6 L14.7 23.4 L18.8 12.2 C19.3 10.8 19.5 9.9 19.5 9 C18 7.7 16.1 7 14 7 Z" fill="#ffffff"/>
+            <text x="34" y="23" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="15" font-weight="700" fill="#475569">WordPress</text>
+          </svg>
+          <span class="partner-badge">Web Architecture</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section & Curved Ribbon To Footer (Animated on Scroll) -->
+  <section id="contact" class="cta-footer-wrap">
+    <!-- Curved top divider -->
+    <div class="curved-wave-top" aria-hidden="true">
+      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+      </svg>
+    </div>
+
+    <div class="container cta-content">
+      <h2 class="cta-heading reveal-up">Ready to Grow Your Business?</h2>
+      <p class="cta-sub reveal-up delay-1">Let's build something great together. Get in touch with our expert team today!</p>
+      
+      <div class="reveal-up delay-2">
+        <button class="cta-btn" onclick="openConsultationModal('Footer CTA')">
+          Contact Us
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </button>
+      </div>
+
+      <div class="cta-meta-row reveal-up delay-3">
+        <div class="meta-item" onclick="copyEmail('hello@devinrc.com')" title="Click to copy email">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+            <polyline points="22,6 12,13 2,6"></polyline>
+          </svg>
+          <span>hello@devinrc.com</span>
+        </div>
+
+        <div class="meta-item" title="DevinRC Global & Indian Enterprise Services">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"></circle>
+            <line x1="2" y1="12" x2="22" y2="12"></line>
+            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+          </svg>
+          <span>Global & India Services</span>
+        </div>
+      </div>
+
+      <!-- Social Media Icons -->
+      <div class="cta-socials reveal-up delay-4">
+        <!-- Facebook -->
+        <a class="social-circle-btn" href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+          </svg>
+        </a>
+        <!-- LinkedIn -->
+        <a class="social-circle-btn" href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+            <rect x="2" y="9" width="4" height="12"></rect>
+            <circle cx="4" cy="4" r="2"></circle>
+          </svg>
+        </a>
+        <!-- X / Twitter -->
+        <a class="social-circle-btn" href="https://x.com" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path>
+          </svg>
+        </a>
+        <!-- YouTube -->
+        <a class="social-circle-btn" href="https://youtube.com" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33zM9.75 15.02V8.48l5.75 3.27-5.75 3.27z"></path>
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container footer-inner reveal-up">
+        <div class="footer-brand">
+          <span style="font-size: 20px; font-weight: 800; color: #ffffff;">◈ devinrc</span>
+          <span style="font-size: 11px; color: #94a3b8;">IT · Digital Marketing · Google Ads</span>
+        </div>
+        <div class="footer-copy">
+          © 2026 DevinRC. All rights reserved. <span>|</span> Your Partner in Digital Growth
+        </div>
+      </div>
+    </footer>
+  </section>
 </main>
-<footer class="footer"><div class="container"><div class="footer-top"><div><div class="footer-brand">◈ devinrc</div><div class="footer-sub">IT · Digital Marketing · Google Ads</div></div><div class="social"><span>f</span><span>in</span><span>𝕏</span><span>▶</span></div></div><div class="copyright">© 2026 DevinRC. All rights reserved. &nbsp;|&nbsp; Your Partner in Digital Growth</div></div></footer>
+
+<!-- Consultation Modal -->
+<div class="modal-overlay" id="consultationModal" role="dialog" aria-modal="true" aria-labelledby="modalHeading">
+  <div class="modal-card">
+    <button class="modal-close-btn" onclick="closeConsultationModal()" aria-label="Close Modal">✕</button>
+    <h3 class="modal-title" id="modalHeading">Get a Free Consultation</h3>
+    <p class="modal-desc">Speak directly with our IT and marketing specialists. We respond within 24 hours.</p>
+
+    <form id="consultationForm" onsubmit="handleConsultationSubmit(event)">
+      <div class="form-group">
+        <label for="clientName">Full Name *</label>
+        <input type="text" id="clientName" class="form-control" placeholder="e.g. Rahul Sharma or John Doe" required>
+      </div>
+      <div class="form-group">
+        <label for="clientEmail">Business Email *</label>
+        <input type="email" id="clientEmail" class="form-control" placeholder="name@company.com" required>
+      </div>
+      <div class="form-group">
+        <label for="serviceInterest">Service of Interest</label>
+        <select id="serviceInterest" class="form-control">
+          <option value="Google Ads Campaign">Google Ads Campaign Management</option>
+          <option value="IT & Web Development">IT Services & Web Development</option>
+          <option value="Digital Marketing & SEO">Digital Marketing & SEO</option>
+          <option value="Creative & Brand Design">Creative & Brand Design</option>
+          <option value="Full Digital Transformation">Complete Digital Transformation</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="clientMsg">Project Details or Goals</label>
+        <textarea id="clientMsg" class="form-control" rows="3" placeholder="Tell us about your project, budget, or timelines..."></textarea>
+      </div>
+      <button type="submit" class="form-submit-btn">Submit Request →</button>
+    </form>
+
+    <div class="form-success-msg" id="formSuccess">
+      <strong>Thank you!</strong> Your consultation request has been received. Our team will contact you shortly at <span id="sentEmail"></span>.
+    </div>
+  </div>
+</div>
+
+<!-- Toast Notification -->
+<div class="toast-msg" id="toastMsg" role="status" aria-live="polite">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#38bdf8" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+    <polyline points="20 6 9 17 4 12"></polyline>
+  </svg>
+  <span id="toastText">Action completed</span>
+</div>
+
+<script>
+// Mobile Navigation Drawer Toggle
+const mobileToggle = document.getElementById('mobileToggle');
+const navMenu = document.getElementById('navMenu');
+
+if (mobileToggle && navMenu) {
+  mobileToggle.addEventListener('click', () => {
+    navMenu.classList.toggle('open');
+  });
+
+  navMenu.querySelectorAll('.nav-link, .nav-cta').forEach(link => {
+    link.addEventListener('click', () => {
+      navMenu.classList.remove('open');
+    });
+  });
+}
+
+// Active navigation highlight on scroll
+const sections = document.querySelectorAll('section[id], main[id]');
+const navLinks = document.querySelectorAll('.nav-link');
+
+window.addEventListener('scroll', () => {
+  let current = '';
+  sections.forEach(sec => {
+    const secTop = sec.offsetTop - 120;
+    if (window.scrollY >= secTop) {
+      current = sec.getAttribute('id');
+    }
+  });
+
+  navLinks.forEach(link => {
+    link.classList.remove('active');
+    if (link.getAttribute('href') === '#' + current || (current === 'top' && link.getAttribute('href') === '#top')) {
+      link.classList.add('active');
+    }
+  });
+}, { passive: true });
+
+// Scroll-Triggered Reveal Animations using IntersectionObserver
+const revealElements = document.querySelectorAll('.reveal-up');
+
+if ('IntersectionObserver' in window) {
+  const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-visible');
+        revealObserver.unobserve(entry.target);
+      }
+    });
+  }, {
+    threshold: 0.1,
+    rootMargin: '0px 0px -40px 0px'
+  });
+
+  revealElements.forEach(el => {
+    // Only observe elements not already visible (e.g. hero items are visible by default)
+    if (!el.classList.contains('is-visible')) {
+      revealObserver.observe(el);
+    }
+  });
+} else {
+  // Fallback for older browsers
+  revealElements.forEach(el => el.classList.add('is-visible'));
+}
+
+// Consultation Modal Logic
+const modal = document.getElementById('consultationModal');
+const serviceSelect = document.getElementById('serviceInterest');
+
+function openConsultationModal(serviceHint) {
+  if (!modal) return;
+  modal.classList.add('active');
+  document.body.style.overflow = 'hidden';
+
+  if (serviceHint && serviceSelect) {
+    if (serviceHint.includes('IT')) serviceSelect.value = 'IT & Web Development';
+    else if (serviceHint.includes('Ads')) serviceSelect.value = 'Google Ads Campaign';
+    else if (serviceHint.includes('Marketing')) serviceSelect.value = 'Digital Marketing & SEO';
+    else if (serviceHint.includes('Design')) serviceSelect.value = 'Creative & Brand Design';
+  }
+}
+
+function closeConsultationModal() {
+  if (!modal) return;
+  modal.classList.remove('active');
+  document.body.style.overflow = '';
+}
+
+modal.addEventListener('click', (e) => {
+  if (e.target === modal) {
+    closeConsultationModal();
+  }
+});
+
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape' && modal.classList.contains('active')) {
+    closeConsultationModal();
+  }
+});
+
+function handleConsultationSubmit(e) {
+  e.preventDefault();
+  const name = document.getElementById('clientName').value.trim();
+  const email = document.getElementById('clientEmail').value.trim();
+  const service = document.getElementById('serviceInterest').value;
+  const msg = document.getElementById('clientMsg').value.trim();
+
+  const successEl = document.getElementById('formSuccess');
+  const formEl = document.getElementById('consultationForm');
+  const sentEmailEl = document.getElementById('sentEmail');
+
+  sentEmailEl.textContent = email;
+  formEl.style.display = 'none';
+  successEl.style.display = 'block';
+
+  // Construct mailto link as fallback/convenience
+  const mailSubject = encodeURIComponent(`Inquiry from ${name} for ${service}`);
+  const mailBody = encodeURIComponent(`Name: ${name}\nEmail: ${email}\nService: ${service}\nDetails: ${msg}`);
+  
+  setTimeout(() => {
+    window.location.href = `mailto:hello@devinrc.com?subject=${mailSubject}&body=${mailBody}`;
+  }, 1200);
+}
+
+// Copy email to clipboard helper
+function copyEmail(email) {
+  navigator.clipboard.writeText(email).then(() => {
+    showToast(`Copied ${email} to clipboard!`);
+  }).catch(() => {
+    window.location.href = `mailto:${email}`;
+  });
+}
+
+function showToast(msg) {
+  const toast = document.getElementById('toastMsg');
+  const text = document.getElementById('toastText');
+  if (!toast || !text) return;
+  text.textContent = msg;
+  toast.classList.add('show');
+  setTimeout(() => {
+    toast.classList.remove('show');
+  }, 2500);
+}
+</script>
+
 </body>
 </html>
